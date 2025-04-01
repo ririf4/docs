@@ -1,8 +1,8 @@
 name: Generate Docs Index
 
 on:
-  push:
-    branches: [main]
+  pull_request:
+    types: [closed]
 
 jobs:
   generate-index:
