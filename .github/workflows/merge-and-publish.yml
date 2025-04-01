@@ -8,9 +8,8 @@ jobs:
   auto-merge-and-publish:
     runs-on: ubuntu-latest
     if: |
-      github.event.pull_request.user.login == 'github-actions[bot]' &&
+      github.event.pull_request.user.login != 'ririf4' &&
       startsWith(github.head_ref, 'docs-')
-    
 
     permissions:
       contents: write
