@@ -1,0 +1,1 @@
+{"@class":"org.jetbrains.dokka.base.templating.AddToSourcesetDependencies","moduleName":"igf","content":{":/main":[]}}
