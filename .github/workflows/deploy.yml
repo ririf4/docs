@@ -1,4 +1,4 @@
-name: Generate Docs Index and Deploy
+name: Deploy
 
 on:
   push:
