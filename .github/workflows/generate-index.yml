@@ -1,8 +1,8 @@
 name: Generate Docs Index
 
 on:
-  pull_request:
-    types: [closed]
+  repository_dispatch:
+    types: [generate-docs-index]
 
 permissions:
   contents: write
@@ -110,3 +110,12 @@ jobs:
           git add index.html
           git commit -m "chore: auto-generate docs index [skip ci] ($(date +%s))" || echo "No changes to commit"
           git push
+
+      - name: Wait a few seconds for GitHub to update refs
+        run: sleep 10
+
+      - name: Trigger deploy manually
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: deploy
