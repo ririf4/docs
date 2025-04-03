@@ -5,9 +5,7 @@ on:
     types: [deploy]
 
 jobs:
-  deploy-if-generated:
-    if: >
-      startsWith(github.event.head_commit.message, 'chore: auto-generate docs index')
+  deploy:
     runs-on: ubuntu-latest
 
     permissions:
