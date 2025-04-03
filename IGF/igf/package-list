@@ -26,9 +26,13 @@ $dokka.location:net.ririfa.igf/DataWrapper/DataWrapper/#org.bukkit.persistence.P
 $dokka.location:net.ririfa.igf/DataWrapper/dataType/#/PointingToDeclaration/igf/net.ririfa.igf/-data-wrapper/data-type.html
 $dokka.location:net.ririfa.igf/DataWrapper/setTo/#org.bukkit.persistence.PersistentDataContainer#org.bukkit.NamespacedKey/PointingToDeclaration/igf/net.ririfa.igf/-data-wrapper/set-to.html
 $dokka.location:net.ririfa.igf/DataWrapper/value/#/PointingToDeclaration/igf/net.ririfa.igf/-data-wrapper/value.html
+$dokka.location:net.ririfa.igf/DynamicGUI.Companion///PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/-companion/index.html
+$dokka.location:net.ririfa.igf/DynamicGUI.Companion/of/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Enum[^]])]#org.bukkit.entity.Player/PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/-companion/of.html
+$dokka.location:net.ririfa.igf/DynamicGUI.Companion/of/#org.bukkit.entity.Player/PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/-companion/of.html
 $dokka.location:net.ririfa.igf/DynamicGUI///PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/index.html
 $dokka.location:net.ririfa.igf/DynamicGUI/DynamicGUI/#java.lang.Class[TypeParam(bounds=[kotlin.Enum[^]])]#org.bukkit.entity.Player/PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/-dynamic-g-u-i.html
 $dokka.location:net.ririfa.igf/DynamicGUI/DynamicGUI/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Enum[^]])]#org.bukkit.entity.Player/PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/-dynamic-g-u-i.html
+$dokka.location:net.ririfa.igf/DynamicGUI/DynamicGUI/#org.bukkit.entity.Player/PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/-dynamic-g-u-i.html
 $dokka.location:net.ririfa.igf/DynamicGUI/build/#/PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/build.html
 $dokka.location:net.ririfa.igf/DynamicGUI/setButtonMappings/#kotlin.collections.Map[TypeParam(bounds=[kotlin.Enum[^]]),kotlin.collections.List[net.ririfa.igf.Button]]/PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/set-button-mappings.html
 $dokka.location:net.ririfa.igf/DynamicGUI/setState/#TypeParam(bounds=[kotlin.Enum[^]])/PointingToDeclaration/igf/net.ririfa.igf/-dynamic-g-u-i/set-state.html
