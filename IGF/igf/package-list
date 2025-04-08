@@ -99,7 +99,8 @@ $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/pageItems/#/PointingToDeclara
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/prevPage/#/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/prev-page.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setEmptyMessageButton/#net.ririfa.igf.Button/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/set-empty-message-button.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setItemsPerPage/#kotlin.Int/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/set-items-per-page.html
-$dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setPageButtons/#net.ririfa.igf.Button#net.ririfa.igf.Button/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/set-page-buttons.html
+$dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setPageChangeButtons/#net.ririfa.igf.Button#net.ririfa.igf.Button/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/set-page-change-buttons.html
+$dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setPageItemProvider/#kotlin.Function1[TypeParam(bounds=[kotlin.Enum[^]]),kotlin.collections.List[net.ririfa.igf.Button]]/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/set-page-item-provider.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setPageItems/#kotlin.collections.List[net.ririfa.igf.Button]/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/set-page-items.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setSlotPositions/#kotlin.collections.List[kotlin.Int]/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/set-slot-positions.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setState/#TypeParam(bounds=[kotlin.Enum[^]])/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/set-state.html
@@ -107,6 +108,7 @@ $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setStateButtonMapping/#kotlin
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/setTotalPages/#kotlin.Int/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/set-total-pages.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/slotPositions/#/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/slot-positions.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/stateButtonMap/#/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/state-button-map.html
+$dokka.location:net.ririfa.igf/PaginatedDynamicGUI/statePageItemProvider/#/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/state-page-item-provider.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/switchPage/#kotlin.Int/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/switch-page.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/switchState/#TypeParam(bounds=[kotlin.Enum[^]])/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/switch-state.html
 $dokka.location:net.ririfa.igf/PaginatedDynamicGUI/totalPages/#/PointingToDeclaration/igf/net.ririfa.igf/-paginated-dynamic-g-u-i/total-pages.html
@@ -116,10 +118,10 @@ $dokka.location:net.ririfa.igf/PaginatedGUI/build/#/PointingToDeclaration/igf/n
 $dokka.location:net.ririfa.igf/PaginatedGUI/displayItemsForPage/#/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/display-items-for-page.html
 $dokka.location:net.ririfa.igf/PaginatedGUI/nextPage/#/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/next-page.html
 $dokka.location:net.ririfa.igf/PaginatedGUI/prevPage/#/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/prev-page.html
+$dokka.location:net.ririfa.igf/PaginatedGUI/setCountOfItemsPerPage/#kotlin.Int/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/set-count-of-items-per-page.html
 $dokka.location:net.ririfa.igf/PaginatedGUI/setEmptyMessageButton/#net.ririfa.igf.Button/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/set-empty-message-button.html
-$dokka.location:net.ririfa.igf/PaginatedGUI/setItemsPerPage/#kotlin.Int/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/set-items-per-page.html
 $dokka.location:net.ririfa.igf/PaginatedGUI/setPage/#kotlin.Int/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/set-page.html
-$dokka.location:net.ririfa.igf/PaginatedGUI/setPageButtons/#net.ririfa.igf.Button#net.ririfa.igf.Button/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/set-page-buttons.html
+$dokka.location:net.ririfa.igf/PaginatedGUI/setPageChangeButtons/#net.ririfa.igf.Button#net.ririfa.igf.Button/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/set-page-change-buttons.html
 $dokka.location:net.ririfa.igf/PaginatedGUI/setPageItems/#kotlin.collections.List[net.ririfa.igf.Button]/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/set-page-items.html
 $dokka.location:net.ririfa.igf/PaginatedGUI/setSlotPositions/#kotlin.collections.List[kotlin.Int]/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/set-slot-positions.html
 $dokka.location:net.ririfa.igf/PaginatedGUI/setTotalPages/#kotlin.Int/PointingToDeclaration/igf/net.ririfa.igf/-paginated-g-u-i/set-total-pages.html
