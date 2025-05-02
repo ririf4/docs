@@ -30,29 +30,37 @@ jobs:
 
           for module in */; do
             [[ "$module" == ".git/" || "$module" == ".github/" || "$module" == "scripts/" ]] && continue
-          
+
+            module_name=$(basename "$module")
+            skip_dirs=("images" "scripts" "styles" "ui-kit")
+            skip_dirs+=("$module_name")
+
             has_subdir=false
             for subdir in "$module"*/; do
-              [[ "$subdir" == "$module/scripts/" ]] && continue
+              name=$(basename "$subdir")
+              if [[ " ${skip_dirs[*]} " == *" $name "* ]]; then
+                continue
+              fi
               has_subdir=true
               break
             done
-          
+
             if [ "$has_subdir" = true ]; then
               module_index="$module/index.html"
               cp scripts/header.html "$module_index"
-            
+
               for subdir in "$module"*/; do
-                [[ "$subdir" == "$module/scripts/" ]] && continue
                 name=$(basename "$subdir")
+                if [[ " ${skip_dirs[*]} " == *" $name "* ]]; then
+                  continue
+                fi
                 echo "        <li><a href=\"./$name/\">$name</a></li>" >> "$module_index"
               done
-            
+
               sed "s/DATE_PLACEHOLDER/$(date -u)/" scripts/footer.html >> "$module_index"
             else
               echo "Skipping $module (no submodules found, will not overwrite existing index.html)"
             fi
-          done
 
       - name: Commit and push index.html
         run: |
