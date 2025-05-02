@@ -15,10 +15,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate index.html from templates
+      - name: Generate index.html for all module roots
         run: |
           mkdir -p scripts
-
           cp scripts/header.html index.html
 
           for dir in */; do
@@ -28,6 +27,32 @@ jobs:
           done
 
           sed "s/DATE_PLACEHOLDER/$(date -u)/" scripts/footer.html >> index.html
+
+          for module in */; do
+            [[ "$module" == ".git/" || "$module" == ".github/" || "$module" == "scripts/" ]] && continue
+          
+            has_subdir=false
+            for subdir in "$module"*/; do
+              [[ "$subdir" == "$module/scripts/" ]] && continue
+              has_subdir=true
+              break
+            done
+          
+            if [ "$has_subdir" = true ]; then
+              module_index="$module/index.html"
+              cp scripts/header.html "$module_index"
+            
+              for subdir in "$module"*/; do
+                [[ "$subdir" == "$module/scripts/" ]] && continue
+                name=$(basename "$subdir")
+                echo "        <li><a href=\"./$name/\">$name</a></li>" >> "$module_index"
+              done
+            
+              sed "s/DATE_PLACEHOLDER/$(date -u)/" scripts/footer.html >> "$module_index"
+            else
+              echo "Skipping $module (no submodules found, will not overwrite existing index.html)"
+            fi
+          done
 
       - name: Commit and push index.html
         run: |
