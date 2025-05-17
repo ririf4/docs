@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-1.0.2        </div>
+1.0.1        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -108,24 +108,24 @@
   <div class="breadcrumbs"><a href="../../../index.html">yacla-yaml</a><span class="delimiter">/</span><a href="../index.html">net.ririfa.yacla.yaml</a><span class="delimiter">/</span><span class="current">YamlParser</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Yaml</span><wbr></wbr><span><span>Parser</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-yaml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">YamlParser</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">objectConstructor<span class="token operator">: </span><span data-unresolved-link="net.ririfa.yacla.constructor/ObjectConstructor///PointingToDeclaration/">ObjectConstructor</span><span class="token operator"> = </span>DefaultObjectConstructor()</span></span><span class="token punctuation">)</span> : <span data-unresolved-link="net.ririfa.yacla.parser/ConfigParser///PointingToDeclaration/">ConfigParser</span></div><p class="paragraph">Default <span data-unresolved-link="net.ririfa.yacla.parser/ConfigParser///PointingToDeclaration/">ConfigParser</span> implementation for YAML configuration files.</p><p class="paragraph">This parser uses SnakeYAML Engine to parse and serialize YAML configuration data. It supports deserialization into Kotlin data classes (using primary constructors) or Java records (with optional <span data-unresolved-link="net.ririfa.yacla.annotation/NamedRecord///PointingToDeclaration/">NamedRecord</span> annotation for component name mapping).</p><p class="paragraph">It also automatically registers a <a href="../-yaml-update-strategy/index.html">YamlUpdateStrategy</a> for handling configuration updates.</p><p class="paragraph">Typically passed to net.ririfa.yacla.loader.ConfigLoaderBuilder.parser when using Yacla with YAML.</p><p class="paragraph">Example:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val loader = Yacla.loader&lt;MyConfig&gt;()<br>    .fromResource(&quot;/defaults/config.yml&quot;)<br>    .toFile(Paths.get(&quot;config.yml&quot;))<br>    .parser(YamlParser())<br>    .load()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-yaml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">YamlParser</a> : <span data-unresolved-link="net.ririfa.yacla.parser/ConfigParser///PointingToDeclaration/">ConfigParser</span></div><p class="paragraph">Default <span data-unresolved-link="net.ririfa.yacla.parser/ConfigParser///PointingToDeclaration/">ConfigParser</span> implementation for YAML configuration files.</p><p class="paragraph">This parser uses SnakeYAML Engine to parse and serialize YAML configuration data. It supports deserialization into Kotlin data classes (using primary constructors) or Java records (with optional <span data-unresolved-link="net.ririfa.yacla.annotation/NamedRecord///PointingToDeclaration/">NamedRecord</span> annotation for component name mapping).</p><p class="paragraph">It also automatically registers a <a href="../-yaml-update-strategy/index.html">YamlUpdateStrategy</a> for handling configuration updates.</p><p class="paragraph">Typically passed to <span data-unresolved-link="net.ririfa.yacla.loader/ConfigLoaderBuilder/parser/#net.ririfa.yacla.parser.ConfigParser/PointingToDeclaration/">net.ririfa.yacla.loader.ConfigLoaderBuilder.parser</span> when using Yacla with YAML.</p><p class="paragraph">Example:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val loader = Yacla.loader&lt;MyConfig&gt;()<br>    .fromResource(&quot;/defaults/config.yml&quot;)<br>    .toFile(Paths.get(&quot;config.yml&quot;))<br>    .parser(YamlParser())<br>    .load()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="-1991286833%2FConstructors%2F113197188" anchor-label="YamlParser" id="-1991286833%2FConstructors%2F113197188" data-filterable-set=":yacla-yaml/main"></a>
+        <div class="table"><a data-name="112767972%2FConstructors%2F113197188" anchor-label="YamlParser" id="112767972%2FConstructors%2F113197188" data-filterable-set=":yacla-yaml/main"></a>
           <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":yacla-yaml/main" data-filterable-set=":yacla-yaml/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-yaml-parser.html"><span>Yaml</span><wbr></wbr><span><span>Parser</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1991286833%2FConstructors%2F113197188"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="112767972%2FConstructors%2F113197188"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-yaml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">objectConstructor<span class="token operator">: </span><span data-unresolved-link="net.ririfa.yacla.constructor/ObjectConstructor///PointingToDeclaration/">ObjectConstructor</span><span class="token operator"> = </span>DefaultObjectConstructor()</span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-yaml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
