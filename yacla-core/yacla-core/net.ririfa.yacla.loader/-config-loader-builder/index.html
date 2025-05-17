@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-1.0.5        </div>
+1.0.2        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -108,14 +108,44 @@
   <div class="breadcrumbs"><a href="../../../index.html">yacla-core</a><span class="delimiter">/</span><a href="../index.html">net.ririfa.yacla.loader</a><span class="delimiter">/</span><span class="current">ConfigLoaderBuilder</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Config</span><wbr></wbr><span>Loader</span><wbr></wbr><span><span>Builder</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ConfigLoaderBuilder</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-d-b-config-loader-builder/index.html">DBConfigLoaderBuilder</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-file-config-loader-builder/index.html">FileConfigLoaderBuilder</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ConfigLoaderBuilder</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div><p class="paragraph">Builder interface for configuring and creating a <a href="../-config-loader/index.html">ConfigLoader</a> instance.</p><p class="paragraph">Provides a fluent API for specifying where to load the configuration from, which parser to use, and logging and auto-update behaviors.</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../net.ririfa.yacla.loader.impl/-default-config-loader-builder/index.html">DefaultConfigLoaderBuilder</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="-1887000508%2FFunctions%2F1776522620" anchor-label="load" id="-1887000508%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+        <div class="table"><a data-name="1888761330%2FFunctions%2F1776522620" anchor-label="autoUpdateIfOutdated" id="1888761330%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="auto-update-if-outdated.html"><span>auto</span><wbr></wbr><span>Update</span><wbr></wbr><span>If</span><wbr></wbr><span><span>Outdated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1888761330%2FFunctions%2F1776522620"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="auto-update-if-outdated.html"><span class="token function">autoUpdateIfOutdated</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ConfigLoaderBuilder</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Enables or disables automatic config updates based on resource version.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1363427406%2FFunctions%2F1776522620" anchor-label="fromResource" id="-1363427406%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="from-resource.html"><span>from</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1363427406%2FFunctions%2F1776522620"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="from-resource.html"><span class="token function">fromResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ConfigLoaderBuilder</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Specifies the path to the resource file bundled with the application. Used as a fallback or for initial creation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1887000508%2FFunctions%2F1776522620" anchor-label="load" id="-1887000508%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
           <div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -126,6 +156,36 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="load.html"><span class="token function">load</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-config-loader/index.html">ConfigLoader</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Builds and loads the config, returning a <a href="../-config-loader/index.html">ConfigLoader</a> instance.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1383118067%2FFunctions%2F1776522620" anchor-label="parser" id="-1383118067%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parser.html"><span><span>parser</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1383118067%2FFunctions%2F1776522620"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="parser.html"><span class="token function">parser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parser<span class="token operator">: </span><a href="../../net.ririfa.yacla.parser/-config-parser/index.html">ConfigParser</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ConfigLoaderBuilder</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the parser used to read and write the config file.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-970822270%2FFunctions%2F1776522620" anchor-label="toFile" id="-970822270%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-file.html"><span>to</span><wbr></wbr><span><span>File</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-970822270%2FFunctions%2F1776522620"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="to-file.html"><span class="token function">toFile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html">Path</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ConfigLoaderBuilder</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets the file where the configuration will be loaded from or saved to.</p></div></div></div>
                 </div>
               </div>
             </div>
