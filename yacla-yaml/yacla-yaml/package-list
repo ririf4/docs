@@ -3,7 +3,7 @@ $dokka.linkExtension:html
 $dokka.location:net.ririfa.yacla.yaml////PointingToDeclaration/yacla-yaml/net.ririfa.yacla.yaml/index.html
 $dokka.location:net.ririfa.yacla.yaml/YamlParser///PointingToDeclaration/yacla-yaml/net.ririfa.yacla.yaml/-yaml-parser/index.html
 $dokka.location:net.ririfa.yacla.yaml/YamlParser/YamlParser/#/PointingToDeclaration/yacla-yaml/net.ririfa.yacla.yaml/-yaml-parser/-yaml-parser.html
-$dokka.location:net.ririfa.yacla.yaml/YamlParser/parse/#java.io.InputStream#java.lang.Class[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/yacla-yaml/net.ririfa.yacla.yaml/-yaml-parser/parse.html
+$dokka.location:net.ririfa.yacla.yaml/YamlParser/parse/#java.io.InputStream/PointingToDeclaration/yacla-yaml/net.ririfa.yacla.yaml/-yaml-parser/parse.html
 $dokka.location:net.ririfa.yacla.yaml/YamlParser/supportedExtensions/#/PointingToDeclaration/yacla-yaml/net.ririfa.yacla.yaml/-yaml-parser/supported-extensions.html
 $dokka.location:net.ririfa.yacla.yaml/YamlParser/write/#java.io.OutputStream#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/yacla-yaml/net.ririfa.yacla.yaml/-yaml-parser/write.html
 $dokka.location:net.ririfa.yacla.yaml/YamlUpdateStrategy///PointingToDeclaration/yacla-yaml/net.ririfa.yacla.yaml/-yaml-update-strategy/index.html
