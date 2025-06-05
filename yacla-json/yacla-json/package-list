@@ -1,0 +1,13 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:net.ririfa.yacla.json////PointingToDeclaration/yacla-json/net.ririfa.yacla.json/index.html
+$dokka.location:net.ririfa.yacla.json/JsonParser///PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-parser/index.html
+$dokka.location:net.ririfa.yacla.json/JsonParser/JsonParser/#/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-parser/-json-parser.html
+$dokka.location:net.ririfa.yacla.json/JsonParser/mapper/#/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-parser/mapper.html
+$dokka.location:net.ririfa.yacla.json/JsonParser/parse/#java.io.InputStream/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-parser/parse.html
+$dokka.location:net.ririfa.yacla.json/JsonParser/supportedExtensions/#/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-parser/supported-extensions.html
+$dokka.location:net.ririfa.yacla.json/JsonParser/write/#java.io.OutputStream#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-parser/write.html
+$dokka.location:net.ririfa.yacla.json/JsonUpdateStrategy///PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-update-strategy/index.html
+$dokka.location:net.ririfa.yacla.json/JsonUpdateStrategy/JsonUpdateStrategy/#/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-update-strategy/-json-update-strategy.html
+$dokka.location:net.ririfa.yacla.json/JsonUpdateStrategy/updateIfNeeded/#net.ririfa.yacla.loader.util.UpdateContext/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-update-strategy/update-if-needed.html
+net.ririfa.yacla.json
