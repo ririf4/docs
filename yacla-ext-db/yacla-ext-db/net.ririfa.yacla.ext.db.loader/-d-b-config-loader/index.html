@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DBConfigLoader</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    yacla-ext-db
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.1.0+beta.6        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":yacla-ext-db/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":yacla-ext-db/main"
+                                       data-filter=":yacla-ext-db/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    yacla-ext-db
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="yacla-ext-db::net.ririfa.yacla.ext.db.loader/DBConfigLoader///PointingToDeclaration//-1271406585">
+  <div class="breadcrumbs"><a href="../../../index.html">yacla-ext-db</a><span class="delimiter">/</span><a href="../index.html">net.ririfa.yacla.ext.db.loader</a><span class="delimiter">/</span><span class="current">DBConfigLoader</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>DBConfig</span><wbr></wbr><span><span>Loader</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-ext-db/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">DBConfigLoader</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div><p class="paragraph">Main interface for DB-backed configuration loader.</p><p class="paragraph">This loader provides access to a cached config object, automatic TTL cache management, and methods for manual reload, save, mutation, and key switching.</p><p class="paragraph">Typically, you obtain an instance via <a href="../-d-b-config-loader-builder/load.html">DBConfigLoaderBuilder.load</a>.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":yacla-ext-db/main" data-filterable-set=":yacla-ext-db/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>T</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the type of the config object being managed</p></div></div></div></div></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":yacla-ext-db/main" data-filterable-set=":yacla-ext-db/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader/index.html">DefaultDBConfigLoader</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1123478186%2FProperties%2F-1271406585" anchor-label="config" id="1123478186%2FProperties%2F-1271406585" data-filterable-set=":yacla-ext-db/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-ext-db/main" data-filterable-set=":yacla-ext-db/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="config.html"><span><span>config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1123478186%2FProperties%2F-1271406585"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-ext-db/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="config.html">config</a><span class="token operator">: </span><a href="index.html">T</a></div><div class="brief "><p class="paragraph">The current cached config object for the given key. May throw if no config is loaded or cache expired.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-517116086%2FProperties%2F-1271406585" anchor-label="syncDispatcher" id="-517116086%2FProperties%2F-1271406585" data-filterable-set=":yacla-ext-db/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-ext-db/main" data-filterable-set=":yacla-ext-db/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sync-dispatcher.html"><span>sync</span><wbr></wbr><span><span>Dispatcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-517116086%2FProperties%2F-1271406585"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-ext-db/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="sync-dispatcher.html">syncDispatcher</a><span class="token operator">: </span><a href="../../net.ririfa.yacla.ext.db.sync/-sync-dispatcher/index.html">SyncDispatcher</a></div><div class="brief "><p class="paragraph">The <a href="../../net.ririfa.yacla.ext.db.sync/-sync-dispatcher/index.html">SyncDispatcher</a> handling background DB sync operations for this loader. Used for shutdown coordination if needed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-897520589%2FFunctions%2F-1271406585" anchor-label="reload" id="-897520589%2FFunctions%2F-1271406585" data-filterable-set=":yacla-ext-db/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-ext-db/main" data-filterable-set=":yacla-ext-db/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reload.html"><span><span>reload</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-897520589%2FFunctions%2F-1271406585"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-ext-db/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="reload.html"><span class="token function">reload</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">DBConfigLoader</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Forces a reload from the database for the current key, replacing the cached object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="735364239%2FFunctions%2F-1271406585" anchor-label="save" id="735364239%2FFunctions%2F-1271406585" data-filterable-set=":yacla-ext-db/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-ext-db/main" data-filterable-set=":yacla-ext-db/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="save.html"><span><span>save</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="735364239%2FFunctions%2F-1271406585"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-ext-db/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="save.html"><span class="token function">save</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Persists the current cached config object for the current key to the database immediately.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1657984691%2FFunctions%2F-1271406585" anchor-label="update" id="-1657984691%2FFunctions%2F-1271406585" data-filterable-set=":yacla-ext-db/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-ext-db/main" data-filterable-set=":yacla-ext-db/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update.html"><span><span>update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1657984691%2FFunctions%2F-1271406585"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-ext-db/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><a href="index.html">T</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Applies a mutation to the config object in-place and updates the cache. Does <strong>not</strong> persist to the database until save or eviction.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="446495503%2FFunctions%2F-1271406585" anchor-label="withKey" id="446495503%2FFunctions%2F-1271406585" data-filterable-set=":yacla-ext-db/main"></a>
+          <div class="table-row" data-filterable-current=":yacla-ext-db/main" data-filterable-set=":yacla-ext-db/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-key.html"><span>with</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="446495503%2FFunctions%2F-1271406585"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-ext-db/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="with-key.html"><span class="token function">withKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">DBConfigLoader</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a new loader instance pointing to the given key in the same table.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
