@@ -103,6 +103,8 @@ $dokka.location:net.ririfa.yacla/LoaderSettings/LoaderSettings/#net.ririfa.yacla
 $dokka.location:net.ririfa.yacla/LoaderSettings/autoUpdate/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-loader-settings/auto-update.html
 $dokka.location:net.ririfa.yacla/LoaderSettings/logger/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-loader-settings/logger.html
 $dokka.location:net.ririfa.yacla/LoaderSettings/parser/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-loader-settings/parser.html
+$dokka.location:net.ririfa.yacla/MissingValue///PointingToDeclaration/yacla-core/net.ririfa.yacla/-missing-value/index.html
+$dokka.location:net.ririfa.yacla/MissingValue/toString/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-missing-value/to-string.html
 $dokka.location:net.ririfa.yacla/Yacla///PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/index.html
 $dokka.location:net.ririfa.yacla/Yacla/loader/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
 $dokka.location:net.ririfa.yacla/Yacla/loader/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.Function1[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
