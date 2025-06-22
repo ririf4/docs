@@ -1,10 +1,10 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:net.ririfa.yacla.ext.db.internal.impl////PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal.impl/index.html
-$dokka.location:net.ririfa.yacla.ext.db.internal.impl/JooqBinaryAccessLayer///PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal.impl/-jooq-binary-access-layer/index.html
-$dokka.location:net.ririfa.yacla.ext.db.internal.impl/JooqBinaryAccessLayer/JooqBinaryAccessLayer/#org.jooq.DSLContext#org.jooq.Table[*]/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal.impl/-jooq-binary-access-layer/-jooq-binary-access-layer.html
-$dokka.location:net.ririfa.yacla.ext.db.internal.impl/JooqBinaryAccessLayer/load/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.String/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal.impl/-jooq-binary-access-layer/load.html
-$dokka.location:net.ririfa.yacla.ext.db.internal.impl/JooqBinaryAccessLayer/save/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.String#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal.impl/-jooq-binary-access-layer/save.html
+$dokka.location:net.ririfa.yacla.ext.db.internal.impl/JdbcBinaryAccessLayer///PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal.impl/-jdbc-binary-access-layer/index.html
+$dokka.location:net.ririfa.yacla.ext.db.internal.impl/JdbcBinaryAccessLayer/JdbcBinaryAccessLayer/#javax.sql.DataSource#kotlin.String/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal.impl/-jdbc-binary-access-layer/-jdbc-binary-access-layer.html
+$dokka.location:net.ririfa.yacla.ext.db.internal.impl/JdbcBinaryAccessLayer/load/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.String/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal.impl/-jdbc-binary-access-layer/load.html
+$dokka.location:net.ririfa.yacla.ext.db.internal.impl/JdbcBinaryAccessLayer/save/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.String#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal.impl/-jdbc-binary-access-layer/save.html
 $dokka.location:net.ririfa.yacla.ext.db.internal////PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal/index.html
 $dokka.location:net.ririfa.yacla.ext.db.internal/DBAccessLayer///PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal/-d-b-access-layer/index.html
 $dokka.location:net.ririfa.yacla.ext.db.internal/DBAccessLayer/load/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.String/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.internal/-d-b-access-layer/load.html
@@ -22,12 +22,10 @@ $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoader/withKe
 $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder///PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/index.html
 $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/DefaultDBConfigLoaderBuilder/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/-default-d-b-config-loader-builder.html
 $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/dataSource/#javax.sql.DataSource/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/data-source.html
-$dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/dsl/#org.jooq.DSLContext/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/dsl.html
 $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/key/#kotlin.String/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/key.html
 $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/load/#/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/load.html
 $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/maxSize/#kotlin.Int/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/max-size.html
 $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/table/#kotlin.String/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/table.html
-$dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/table/#org.jooq.Table[*]/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/table.html
 $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/ttl/#java.time.Duration/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/ttl.html
 $dokka.location:net.ririfa.yacla.ext.db.loader.impl/DefaultDBConfigLoaderBuilder/ttl/#kotlin.Int/PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader.impl/-default-d-b-config-loader-builder/ttl.html
 $dokka.location:net.ririfa.yacla.ext.db.loader////PointingToDeclaration/yacla-ext-db/net.ririfa.yacla.ext.db.loader/index.html
