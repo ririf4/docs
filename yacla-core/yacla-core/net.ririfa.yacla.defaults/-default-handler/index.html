@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-1.1.0+rc.6        </div>
+2.0.0        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -108,24 +108,24 @@
   <div class="breadcrumbs"><a href="../../../index.html">yacla-core</a><span class="delimiter">/</span><a href="../index.html">net.ririfa.yacla.defaults</a><span class="delimiter">/</span><span class="current">DefaultHandler</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Default</span><wbr></wbr><span><span>Handler</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="index.html">DefaultHandler</a></div><p class="paragraph">Defines a handler for parsing a string value into an object of a specific type.</p><p class="paragraph">Implementations of this interface are responsible for converting a raw string value (typically from a @Default annotation) into the desired target type.</p><p class="paragraph">Example:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">DefaultHandlers.register(MyType::class.java) { raw, _ -&gt; MyType.parse(raw) }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-default-handlers/index.html"><span>Default</span><wbr></wbr><span><span>Handlers</span></span></a></div></span></div><div><div class="title"><p class="paragraph">to register custom handlers</p></div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="index.html">DefaultHandler</a></div><p class="paragraph">Functional interface for converting a <i>raw</i> value (usually a <code class="lang-kotlin">String</code> but any <code class="lang-kotlin">Any?</code> is allowed) into an instance of the requested Kotlin type.</p><p class="paragraph">Implementations should <strong>not</strong> throw unless the value is inherently un‐parsable; callers treat an exception as a hard failure during configuration loading.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="1634936662%2FFunctions%2F1776522620" anchor-label="parse" id="1634936662%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+        <div class="table"><a data-name="1645794687%2FFunctions%2F1776522620" anchor-label="parse" id="1645794687%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
           <div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="parse.html"><span><span>parse</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1634936662%2FFunctions%2F1776522620"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1645794687%2FFunctions%2F1776522620"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="parse.html"><span class="token function">parse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">raw<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Parses the provided raw string into an object of the given type.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="parse.html"><span class="token function">parse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">raw<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>

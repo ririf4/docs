@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-1.1.0+rc.6        </div>
+2.0.0        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -108,54 +108,39 @@
   <div class="breadcrumbs"><a href="../../../index.html">yacla-core</a><span class="delimiter">/</span><a href="../index.html">net.ririfa.yacla.defaults</a><span class="delimiter">/</span><span class="current">DefaultHandlers</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Default</span><wbr></wbr><span><span>Handlers</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">DefaultHandlers</a></div><p class="paragraph">A registry of <a href="../-default-handler/index.html">DefaultHandler</a> instances for different types.</p><p class="paragraph">This object holds the mapping of supported types to their corresponding parsers used when applying default values via the <a href="../../net.ririfa.yacla.annotation/-default/index.html">net.ririfa.yacla.annotation.Default</a> annotation.</p><p class="paragraph">The registry includes built-in handlers for common primitive types (String, Boolean, Int, etc.) and allows registering additional custom handlers for other types.</p><p class="paragraph">Example:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">DefaultHandlers.register(MyType::class.java) { raw, _ -&gt; MyType.parse(raw) }</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">DefaultHandlers</a></div><p class="paragraph">Registry for <a href="../-default-handler/index.html">DefaultHandler</a>s keyed purely by <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a>.</p><ul><li><p class="paragraph">Built‑in handlers are lazily registered at first access.</p></li><li><p class="paragraph">Primitive vs wrapper classes are resolved transparently.</p></li><li><p class="paragraph">Java‑based APIs can still register via <code class="lang-kotlin">register(java.lang.Class)</code> using the provided overload.</p></li></ul></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="171463789%2FFunctions%2F1776522620" anchor-label="get" id="171463789%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+        <div class="table"><a data-name="-68810412%2FFunctions%2F1776522620" anchor-label="get" id="-68810412%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
           <div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="get.html"><span><span>get</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="171463789%2FFunctions%2F1776522620"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-68810412%2FFunctions%2F1776522620"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-default-handler/index.html">DefaultHandler</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Retrieves the registered <a href="../-default-handler/index.html">DefaultHandler</a> for the given type, or null if none registered.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-default-handler/index.html">DefaultHandler</a><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="640431468%2FFunctions%2F1776522620" anchor-label="register" id="640431468%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+<a data-name="1298971269%2FFunctions%2F1776522620" anchor-label="register" id="1298971269%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
           <div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="register.html"><span><span>register</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="640431468%2FFunctions%2F1776522620"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1298971269%2FFunctions%2F1776522620"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="register.html"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">handler<span class="token operator">: </span><a href="../-default-handler/index.html">DefaultHandler</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers a <a href="../-default-handler/index.html">DefaultHandler</a> for the given type.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-2089350824%2FFunctions%2F1776522620" anchor-label="registerDefaults" id="-2089350824%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
-          <div class="table-row" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="register-defaults.html"><span>register</span><wbr></wbr><span><span>Defaults</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2089350824%2FFunctions%2F1776522620"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="register-defaults.html"><span class="token function">registerDefaults</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers the default handlers for common primitive types.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="register.html"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">handler<span class="token operator">: </span><a href="../-default-handler/index.html">DefaultHandler</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Convenience overload for Java callers</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="register.html"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">handler<span class="token operator">: </span><a href="../-default-handler/index.html">DefaultHandler</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
