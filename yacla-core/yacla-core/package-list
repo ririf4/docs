@@ -9,23 +9,20 @@ $dokka.location:net.ririfa.yacla.annotation/Default///PointingToDeclaration/yac
 $dokka.location:net.ririfa.yacla.annotation/Default/value/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-default/value.html
 $dokka.location:net.ririfa.yacla.annotation/IfNullEvenRequired///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-if-null-even-required/index.html
 $dokka.location:net.ririfa.yacla.annotation/IfNullEvenRequired/handler/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-if-null-even-required/handler.html
-$dokka.location:net.ririfa.yacla.annotation/JLoaderScope///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-j-loader-scope/index.html
-$dokka.location:net.ririfa.yacla.annotation/JLoaderScope/loader/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#java.util.function.Consumer[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])]]/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-j-loader-scope/loader.html
 $dokka.location:net.ririfa.yacla.annotation/NamedRecord///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-named-record/index.html
 $dokka.location:net.ririfa.yacla.annotation/NamedRecord/value/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-named-record/value.html
 $dokka.location:net.ririfa.yacla.annotation/Range///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-range/index.html
 $dokka.location:net.ririfa.yacla.annotation/Range/max/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-range/max.html
 $dokka.location:net.ririfa.yacla.annotation/Range/min/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-range/min.html
 $dokka.location:net.ririfa.yacla.annotation/Required///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-required/index.html
-$dokka.location:net.ririfa.yacla.annotation/Required/named/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-required/named.html
 $dokka.location:net.ririfa.yacla.annotation/Required/soft/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-required/soft.html
 $dokka.location:net.ririfa.yacla.defaults////PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/index.html
 $dokka.location:net.ririfa.yacla.defaults/DefaultHandler///PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/-default-handler/index.html
-$dokka.location:net.ririfa.yacla.defaults/DefaultHandler/parse/#kotlin.String#java.lang.Class[*]/PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/-default-handler/parse.html
+$dokka.location:net.ririfa.yacla.defaults/DefaultHandler/parse/#kotlin.Any?#kotlin.reflect.KClass[*]/PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/-default-handler/parse.html
 $dokka.location:net.ririfa.yacla.defaults/DefaultHandlers///PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/-default-handlers/index.html
-$dokka.location:net.ririfa.yacla.defaults/DefaultHandlers/get/#java.lang.Class[*]/PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/-default-handlers/get.html
+$dokka.location:net.ririfa.yacla.defaults/DefaultHandlers/get/#kotlin.reflect.KClass[*]/PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/-default-handlers/get.html
 $dokka.location:net.ririfa.yacla.defaults/DefaultHandlers/register/#java.lang.Class[*]#net.ririfa.yacla.defaults.DefaultHandler/PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/-default-handlers/register.html
-$dokka.location:net.ririfa.yacla.defaults/DefaultHandlers/registerDefaults/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/-default-handlers/register-defaults.html
+$dokka.location:net.ririfa.yacla.defaults/DefaultHandlers/register/#kotlin.reflect.KClass[*]#net.ririfa.yacla.defaults.DefaultHandler/PointingToDeclaration/yacla-core/net.ririfa.yacla.defaults/-default-handlers/register.html
 $dokka.location:net.ririfa.yacla.exception////PointingToDeclaration/yacla-core/net.ririfa.yacla.exception/index.html
 $dokka.location:net.ririfa.yacla.exception/YaclaConfigException///PointingToDeclaration/yacla-core/net.ririfa.yacla.exception/-yacla-config-exception/index.html
 $dokka.location:net.ririfa.yacla.exception/YaclaConfigException/YaclaConfigException/#kotlin.String#kotlin.Throwable?/PointingToDeclaration/yacla-core/net.ririfa.yacla.exception/-yacla-config-exception/-yacla-config-exception.html
@@ -34,7 +31,6 @@ $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader///PointingToDec
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/DefaultConfigLoader/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#net.ririfa.yacla.parser.ConfigParser#java.nio.file.Path#net.ririfa.yacla.logger.YaclaLogger?#kotlin.String/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/-default-config-loader.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/config/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/config.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/constructConfig/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.collections.Map[kotlin.String,kotlin.Any?]/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/construct-config.html
-$dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/nullCheck/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/null-check.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/reload/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/reload.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/updateConfig/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/update-config.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/validate/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/validate.html
@@ -58,7 +54,6 @@ $dokka.location:net.ririfa.yacla.loader.util/UpdateContext/targetFile/#/Pointing
 $dokka.location:net.ririfa.yacla.loader////PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/index.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoader///PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/index.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoader/config/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/config.html
-$dokka.location:net.ririfa.yacla.loader/ConfigLoader/nullCheck/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/null-check.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoader/reload/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/reload.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoader/updateConfig/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/update-config.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoader/validate/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/validate.html
@@ -70,11 +65,13 @@ $dokka.location:net.ririfa.yacla.loader/ConfigLoaderBuilder/parser/#net.ririfa.y
 $dokka.location:net.ririfa.yacla.loader/ConfigLoaderBuilder/toFile/#java.nio.file.Path/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader-builder/to-file.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoaderBuilder/withLogger/#net.ririfa.yacla.logger.YaclaLogger/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader-builder/with-logger.html
 $dokka.location:net.ririfa.yacla.loader/ErrorHandlerWith///PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-error-handler-with/index.html
-$dokka.location:net.ririfa.yacla.loader/ErrorHandlerWith/handle/#kotlin.Any?/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-error-handler-with/handle.html
+$dokka.location:net.ririfa.yacla.loader/ErrorHandlerWith/handle/#kotlin.Any?#kotlin.Any?/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-error-handler-with/handle.html
 $dokka.location:net.ririfa.yacla.loader/FieldLoader///PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-field-loader/index.html
 $dokka.location:net.ririfa.yacla.loader/FieldLoader/load/#kotlin.Any?/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-field-loader/load.html
 $dokka.location:net.ririfa.yacla.loader/FieldValidator///PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-field-validator/index.html
 $dokka.location:net.ririfa.yacla.loader/FieldValidator/validate/#kotlin.Any?#kotlin.Any/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-field-validator/validate.html
+$dokka.location:net.ririfa.yacla.loader/JLoaderScope///PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-j-loader-scope/index.html
+$dokka.location:net.ririfa.yacla.loader/JLoaderScope/loader/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#java.util.function.Consumer[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])]]/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-j-loader-scope/loader.html
 $dokka.location:net.ririfa.yacla.loader/UpdateStrategy///PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-update-strategy/index.html
 $dokka.location:net.ririfa.yacla.loader/UpdateStrategy/updateIfNeeded/#net.ririfa.yacla.loader.util.UpdateContext/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-update-strategy/update-if-needed.html
 $dokka.location:net.ririfa.yacla.loader/UpdateStrategyRegistry///PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-update-strategy-registry/index.html
@@ -103,14 +100,12 @@ $dokka.location:net.ririfa.yacla/LoaderSettings/LoaderSettings/#net.ririfa.yacla
 $dokka.location:net.ririfa.yacla/LoaderSettings/autoUpdate/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-loader-settings/auto-update.html
 $dokka.location:net.ririfa.yacla/LoaderSettings/logger/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-loader-settings/logger.html
 $dokka.location:net.ririfa.yacla/LoaderSettings/parser/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-loader-settings/parser.html
-$dokka.location:net.ririfa.yacla/MissingValue///PointingToDeclaration/yacla-core/net.ririfa.yacla/-missing-value/index.html
-$dokka.location:net.ririfa.yacla/MissingValue/toString/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-missing-value/to-string.html
 $dokka.location:net.ririfa.yacla/Yacla///PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/index.html
 $dokka.location:net.ririfa.yacla/Yacla/loader/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
 $dokka.location:net.ririfa.yacla/Yacla/loader/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.Function1[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
 $dokka.location:net.ririfa.yacla/Yacla/loader/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
 $dokka.location:net.ririfa.yacla/Yacla/loader/net.ririfa.yacla.LoaderScope#kotlin.Function1[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
-$dokka.location:net.ririfa.yacla/Yacla/withDefaults/#net.ririfa.yacla.LoaderSettings#java.util.function.Function[net.ririfa.yacla.annotation.JLoaderScope,TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/with-defaults.html
+$dokka.location:net.ririfa.yacla/Yacla/withDefaults/#net.ririfa.yacla.LoaderSettings#java.util.function.Function[net.ririfa.yacla.loader.JLoaderScope,TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/with-defaults.html
 $dokka.location:net.ririfa.yacla/Yacla/withDefaults/#net.ririfa.yacla.LoaderSettings#kotlin.Function1[net.ririfa.yacla.LoaderScope,TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/with-defaults.html
 net.ririfa.yacla
 net.ririfa.yacla.annotation
