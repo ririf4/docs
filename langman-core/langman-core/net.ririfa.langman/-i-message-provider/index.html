@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>IMessageProvider</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    langman-core
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+2.0.0        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":langman-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":langman-core/main"
+                                       data-filter=":langman-core/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    langman-core
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="langman-core::net.ririfa.langman/IMessageProvider///PointingToDeclaration//-1867012832">
+  <div class="breadcrumbs"><a href="../../../index.html">langman-core</a><span class="delimiter">/</span><a href="../index.html">net.ririfa.langman</a><span class="delimiter">/</span><span class="current">IMessageProvider</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>IMessage</span><wbr></wbr><span><span>Provider</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":langman-core/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">IMessageProvider</a><span class="token operator">&lt;</span><a href="index.html">C</a><span class="token operator">&gt;</span></div><p class="paragraph">Interface for a message provider that handles localized messages.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":langman-core/main" data-filterable-set=":langman-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>C</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The type of the message content (e.g., <code class="lang-kotlin">String</code>, <code class="lang-kotlin">Component</code>).</p></div></div></div></div></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":langman-core/main" data-filterable-set=":langman-core/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../net.ririfa.langman.def/-message-provider-default/index.html">MessageProviderDefault</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1370630536%2FFunctions%2F-1867012832" anchor-label="getLanguage" id="-1370630536%2FFunctions%2F-1867012832" data-filterable-set=":langman-core/main"></a>
+          <div class="table-row" data-filterable-current=":langman-core/main" data-filterable-set=":langman-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-language.html"><span>get</span><wbr></wbr><span><span>Language</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1370630536%2FFunctions%2F-1867012832"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":langman-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get-language.html"><span class="token function">getLanguage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Retrieves the language code associated with this provider.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="936069083%2FFunctions%2F-1867012832" anchor-label="getMessage" id="936069083%2FFunctions%2F-1867012832" data-filterable-set=":langman-core/main"></a>
+          <div class="table-row" data-filterable-current=":langman-core/main" data-filterable-set=":langman-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-message.html"><span>get</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="936069083%2FFunctions%2F-1867012832"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":langman-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get-message.html"><span class="token function">getMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-message-key/index.html">MessageKey</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">C</a></div><div class="brief "><p class="paragraph">Retrieves a formatted localized message using a key.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get-message.html"><span class="token function"><strike>getMessage</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-message-key/index.html">MessageKey</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>args<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">C</a></div><div class="brief "><p class="paragraph">Retrieves a formatted localized message based on the provided key and optional arguments.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-message.html">K</a><span class="token punctuation">, </span><a href="get-message.html">V</a><span class="token operator">&gt; </span><a href="get-message.html"><span class="token function">getMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-message-key/index.html">MessageKey</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">argsComplete<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="get-message.html">K</a><span class="token punctuation">, </span><a href="get-message.html">V</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyMap()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">C</a></div><div class="brief "><p class="paragraph">Retrieves a formatted localized message using a map of named arguments.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-message.html">T</a><span class="token punctuation">, </span><a href="get-message.html">K</a><span class="token punctuation">, </span><a href="get-message.html">V</a><span class="token operator">&gt; </span><a href="get-message.html"><span class="token function">getMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-message-key/index.html">MessageKey</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">intermediate<span class="token operator">: </span><a href="get-message.html">T</a><span class="token punctuation">, </span></span><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><a href="get-message.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="get-message.html">K</a><span class="token punctuation">, </span><a href="get-message.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">C</a></div><div class="brief "><p class="paragraph">Retrieves a formatted localized message using an intermediate data type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="248281263%2FFunctions%2F-1867012832" anchor-label="getRawMessage" id="248281263%2FFunctions%2F-1867012832" data-filterable-set=":langman-core/main"></a>
+          <div class="table-row" data-filterable-current=":langman-core/main" data-filterable-set=":langman-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-raw-message.html"><span>get</span><wbr></wbr><span>Raw</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="248281263%2FFunctions%2F-1867012832"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":langman-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get-raw-message.html"><span class="token function">getRawMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-message-key/index.html">MessageKey</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Retrieves the raw message string for the provided key without formatting.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-961567131%2FFunctions%2F-1867012832" anchor-label="hasMessage" id="-961567131%2FFunctions%2F-1867012832" data-filterable-set=":langman-core/main"></a>
+          <div class="table-row" data-filterable-current=":langman-core/main" data-filterable-set=":langman-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-message.html"><span>has</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-961567131%2FFunctions%2F-1867012832"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":langman-core/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="has-message.html"><span class="token function">hasMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-message-key/index.html">MessageKey</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a localized message exists for the given key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
