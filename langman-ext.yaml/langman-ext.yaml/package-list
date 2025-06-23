@@ -1,0 +1,10 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:net.ririfa.langman.ext.yaml////PointingToDeclaration/langman-ext.yaml/net.ririfa.langman.ext.yaml/index.html
+$dokka.location:net.ririfa.langman.ext.yaml/YamlFileLoader///PointingToDeclaration/langman-ext.yaml/net.ririfa.langman.ext.yaml/-yaml-file-loader/index.html
+$dokka.location:net.ririfa.langman.ext.yaml/YamlFileLoader/YamlFileLoader/#kotlin.Function1[java.io.InputStream,kotlin.Any]/PointingToDeclaration/langman-ext.yaml/net.ririfa.langman.ext.yaml/-yaml-file-loader/-yaml-file-loader.html
+$dokka.location:net.ririfa.langman.ext.yaml/YamlFileLoader/fileExtensions/#/PointingToDeclaration/langman-ext.yaml/net.ririfa.langman.ext.yaml/-yaml-file-loader/file-extensions.html
+$dokka.location:net.ririfa.langman.ext.yaml/YamlFileLoader/flatten/#kotlin.collections.Map[kotlin.String,kotlin.Any]#kotlin.String/PointingToDeclaration/langman-ext.yaml/net.ririfa.langman.ext.yaml/-yaml-file-loader/flatten.html
+$dokka.location:net.ririfa.langman.ext.yaml/YamlFileLoader/parse/#java.io.InputStream/PointingToDeclaration/langman-ext.yaml/net.ririfa.langman.ext.yaml/-yaml-file-loader/parse.html
+$dokka.location:net.ririfa.langman.ext.yaml/YamlFileLoader/parse/#java.nio.file.Path/PointingToDeclaration/langman-ext.yaml/net.ririfa.langman.ext.yaml/-yaml-file-loader/parse.html
+net.ririfa.langman.ext.yaml
