@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AKHdr32</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    akkaradb
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.2.0        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":akkaradb/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":akkaradb/main"
+                                       data-filter=":akkaradb/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    akkaradb
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="akkaradb::dev.swiftstorm.akkaradb.common/AKHdr32///PointingToDeclaration//289714029">
+  <div class="breadcrumbs"><a href="../../../index.html">akkaradb</a><span class="delimiter">/</span><a href="../index.html">dev.swiftstorm.akkaradb.common</a><span class="delimiter">/</span><span class="current">AKHdr32</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>AKHdr32</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">AKHdr32</a></div><p class="paragraph">AKHdr32 — AkkaraDB-specific 32-byte fixed header codec + key helpers.</p><p class="paragraph">Layout (offset / size): 0   2   kLen    (u16) 2   4   vLen    (u32) — value length of <i>this chunk</i> 6   8   seq     (u64) 14  1   flags   (u8) 15  1   pad0    (=0) 16  8   keyFP64 (u64) — SipHash-2-4(key, DEFAULT_SIPHASH_SEED) 24  8   miniKey (u64) — first <=8B of key, LE-packed (rest zero) -- total 32 bytes</p><p class="paragraph">Spec / Generation policy:</p><ul><li><p class="paragraph">Endianness: all fields are Little-Endian via LE.* primitives.</p></li><li><p class="paragraph">miniKey: buildMiniKeyLE(key) packs key0..key<=7 into bits 7:0..63:56;     short keys are zero-padded toward high bits.</p></li><li><p class="paragraph">keyFP64: SipHash-2-4 over the raw key bytes with k0 = DEFAULT_SIPHASH_SEED,     k1 = (DEFAULT_SIPHASH_SEED xor 0x9E3779B97F4A7C15). Use as a 64-bit fingerprint     for indexing, Bloom seeding, and fast pre-checks. Collisions are possible and     must be resolved by full key compare on the reader side.</p></li></ul></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1293026111%2FClasslikes%2F289714029" anchor-label="Header" id="1293026111%2FClasslikes%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-header/index.html"><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1293026111%2FClasslikes%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-header/index.html">Header</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>kLen<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>vLen<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u32/index.html">U32</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>seq<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>keyFP64<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>miniKey<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="211840785%2FProperties%2F289714029" anchor-label="DEFAULT_SIPHASH_SEED" id="211840785%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-f-a-u-l-t_-s-i-p-h-a-s-h_-s-e-e-d.html"><span>DEFAULT_</span><wbr></wbr><span>SIPHASH_</span><wbr></wbr><span>SEED</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="211840785%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-d-e-f-a-u-l-t_-s-i-p-h-a-s-h_-s-e-e-d.html">DEFAULT_SIPHASH_SEED</a><span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></div><div class="brief "><p class="paragraph">Default deterministic seed for SipHash-2-4 used to derive keyFP64.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-315643156%2FProperties%2F289714029" anchor-label="OFF_FLAGS" id="-315643156%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-f-f_-f-l-a-g-s.html"><span>OFF_</span><wbr></wbr><span>FLAGS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-315643156%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-o-f-f_-f-l-a-g-s.html">OFF_FLAGS</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">14</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1097229250%2FProperties%2F289714029" anchor-label="OFF_KFP" id="-1097229250%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-f-f_-k-f-p.html"><span>OFF_</span><wbr></wbr><span>KFP</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1097229250%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-o-f-f_-k-f-p.html">OFF_KFP</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">16</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1542881981%2FProperties%2F289714029" anchor-label="OFF_KLEN" id="1542881981%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-f-f_-k-l-e-n.html"><span>OFF_</span><wbr></wbr><span>KLEN</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1542881981%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-o-f-f_-k-l-e-n.html">OFF_KLEN</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-692179760%2FProperties%2F289714029" anchor-label="OFF_MINI" id="-692179760%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-f-f_-m-i-n-i.html"><span>OFF_</span><wbr></wbr><span>MINI</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-692179760%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-o-f-f_-m-i-n-i.html">OFF_MINI</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">24</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1623316938%2FProperties%2F289714029" anchor-label="OFF_PAD0" id="1623316938%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-f-f_-p-a-d0.html"><span>OFF_</span><wbr></wbr><span>PAD0</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1623316938%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-o-f-f_-p-a-d0.html">OFF_PAD0</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">15</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="229251476%2FProperties%2F289714029" anchor-label="OFF_SEQ" id="229251476%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-f-f_-s-e-q.html"><span>OFF_</span><wbr></wbr><span>SEQ</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="229251476%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-o-f-f_-s-e-q.html">OFF_SEQ</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">6</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="577066056%2FProperties%2F289714029" anchor-label="OFF_VLEN" id="577066056%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-f-f_-v-l-e-n.html"><span>OFF_</span><wbr></wbr><span>VLEN</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="577066056%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-o-f-f_-v-l-e-n.html">OFF_VLEN</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">2</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-8821674%2FProperties%2F289714029" anchor-label="SIZE" id="-8821674%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-i-z-e.html"><span><span>SIZE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-8821674%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-i-z-e.html">SIZE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">32</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1046143851%2FFunctions%2F289714029" anchor-label="buildMiniKeyLE" id="-1046143851%2FFunctions%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build-mini-key-l-e.html"><span>build</span><wbr></wbr><span>Mini</span><wbr></wbr><span>Key</span><wbr></wbr><span><span>LE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1046143851%2FFunctions%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="build-mini-key-l-e.html"><span class="token function">buildMiniKeyLE</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-byte-buffer-l/index.html">ByteBufferL</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="build-mini-key-l-e.html"><span class="token function">buildMiniKeyLE</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></div><div class="brief "><p class="paragraph">Pack first up to 8 bytes of <a href="build-mini-key-l-e.html">key</a> into a little-endian 64-bit word (key0 -> bits 7:0).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="730255196%2FFunctions%2F289714029" anchor-label="peek" id="730255196%2FFunctions%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../peek.html"><span><span>peek</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="730255196%2FFunctions%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">AKHdr32</a><span class="token punctuation">.</span><a href="../peek.html"><span class="token function">peek</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bufL<span class="token operator">: </span><a href="../-byte-buffer-l/index.html">ByteBufferL</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-header/index.html">AKHdr32.Header</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="181961322%2FFunctions%2F289714029" anchor-label="read" id="181961322%2FFunctions%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read.html"><span><span>read</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="181961322%2FFunctions%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="read.html"><span class="token function">read</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buf<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/ByteBuffer.html">ByteBuffer</a><span class="token punctuation">, </span></span><span class="parameter ">at<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-header/index.html">AKHdr32.Header</a></div><div class="brief "><p class="paragraph">Absolute read of 32-byte header from <a href="read.html">at</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1183205588%2FFunctions%2F289714029" anchor-label="readRel" id="1183205588%2FFunctions%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-rel.html"><span>read</span><wbr></wbr><span><span>Rel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1183205588%2FFunctions%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="read-rel.html"><span class="token function">readRel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buf<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/ByteBuffer.html">ByteBuffer</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-header/index.html">AKHdr32.Header</a></div><div class="brief "><p class="paragraph">Relative read: reads at current position and advances by 32.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="883511254%2FFunctions%2F289714029" anchor-label="sipHash24" id="883511254%2FFunctions%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sip-hash24.html"><span>sip</span><wbr></wbr><span><span>Hash24</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="883511254%2FFunctions%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="sip-hash24.html"><span class="token function">sipHash24</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../-byte-buffer-l/index.html">ByteBufferL</a><span class="token punctuation">, </span></span><span class="parameter ">seed64<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></div><br><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="sip-hash24.html"><span class="token function">sipHash24</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">seed64<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></div><div class="brief "><p class="paragraph">SipHash-2-4(key, seed64) → 64-bit fingerprint (k0=seed, k1=seed^phi).</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="sip-hash24.html"><span class="token function">sipHash24</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">m<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">k0<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a><span class="token punctuation">, </span></span><span class="parameter ">k1<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></div><div class="brief "><p class="paragraph">SipHash-2-4(key, (k0,k1)).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-337288148%2FFunctions%2F289714029" anchor-label="write" id="-337288148%2FFunctions%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write.html"><span><span>write</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-337288148%2FFunctions%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="write.html"><span class="token function">write</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buf<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/ByteBuffer.html">ByteBuffer</a><span class="token punctuation">, </span></span><span class="parameter ">at<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">kLen<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">vLen<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u32/index.html">U32</a><span class="token punctuation">, </span></span><span class="parameter ">seq<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">keyFP64<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a><span class="token punctuation">, </span></span><span class="parameter ">miniKey<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Absolute write of 32-byte header at <a href="write.html">at</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1178510614%2FFunctions%2F289714029" anchor-label="writeRel" id="1178510614%2FFunctions%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-rel.html"><span>write</span><wbr></wbr><span><span>Rel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1178510614%2FFunctions%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword">fun </span><a href="write-rel.html"><span class="token function">writeRel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buf<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/ByteBuffer.html">ByteBuffer</a><span class="token punctuation">, </span></span><span class="parameter ">kLen<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">vLen<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u32/index.html">U32</a><span class="token punctuation">, </span></span><span class="parameter ">seq<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">keyFP64<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a><span class="token punctuation">, </span></span><span class="parameter ">miniKey<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common.types/-u64/index.html">U64</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Relative write: writes at current position and advances by 32.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
