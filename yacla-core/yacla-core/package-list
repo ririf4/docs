@@ -16,7 +16,6 @@ $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/DefaultConfigLo
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/config/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/config.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/reload/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/reload.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/updateConfig/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/update-config.html
-$dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoader/validate/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader/validate.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoaderBuilder///PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader-builder/index.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoaderBuilder/DefaultConfigLoaderBuilder/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader-builder/-default-config-loader-builder.html
 $dokka.location:net.ririfa.yacla.loader.impl/DefaultConfigLoaderBuilder/autoUpdateIfOutdated/#kotlin.Boolean/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader.impl/-default-config-loader-builder/auto-update-if-outdated.html
@@ -40,7 +39,6 @@ $dokka.location:net.ririfa.yacla.loader/ConfigLoader///PointingToDeclaration/ya
 $dokka.location:net.ririfa.yacla.loader/ConfigLoader/config/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/config.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoader/reload/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/reload.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoader/updateConfig/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/update-config.html
-$dokka.location:net.ririfa.yacla.loader/ConfigLoader/validate/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader/validate.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoaderBuilder///PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader-builder/index.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoaderBuilder/autoUpdateIfOutdated/#kotlin.Boolean/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader-builder/auto-update-if-outdated.html
 $dokka.location:net.ririfa.yacla.loader/ConfigLoaderBuilder/fromResource/#kotlin.String/PointingToDeclaration/yacla-core/net.ririfa.yacla.loader/-config-loader-builder/from-resource.html
