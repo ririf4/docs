@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CaskBuilderImpl</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    cask
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0.0        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":/main"
+                                       data-filter=":/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    cask
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="cask::net.ririfa.cask.impl/CaskBuilderImpl///PointingToDeclaration//-251573632">
+  <div class="breadcrumbs"><a href="../../../index.html">cask</a><span class="delimiter">/</span><a href="../index.html">net.ririfa.cask.impl</a><span class="delimiter">/</span><span class="current">CaskBuilderImpl</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Cask</span><wbr></wbr><span>Builder</span><wbr></wbr><span><span>Impl</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CaskBuilderImpl</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span> : <a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt; </span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="99267917%2FConstructors%2F-251573632" anchor-label="CaskBuilderImpl" id="99267917%2FConstructors%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cask-builder-impl.html"><span>Cask</span><wbr></wbr><span>Builder</span><wbr></wbr><span><span>Impl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="99267917%2FConstructors%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-884516542%2FProperties%2F-251573632" anchor-label="fifo" id="-884516542%2FProperties%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/fifo.html"><span><span>fifo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-884516542%2FProperties%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">var </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/fifo.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/fifo.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/fifo.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/fifo.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/fifo.html">fifo</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1250291283%2FProperties%2F-251573632" anchor-label="lru" id="1250291283%2FProperties%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/lru.html"><span><span>lru</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1250291283%2FProperties%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">var </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/lru.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/lru.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/lru.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/lru.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/lru.html">lru</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1832447805%2FProperties%2F-251573632" anchor-label="maxSize" id="1832447805%2FProperties%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/max-size.html"><span>max</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1832447805%2FProperties%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">var </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/max-size.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/max-size.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/max-size.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/max-size.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/max-size.html">maxSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="310068971%2FProperties%2F-251573632" anchor-label="ttlHours" id="310068971%2FProperties%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/ttl-hours.html"><span>ttl</span><wbr></wbr><span><span>Hours</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="310068971%2FProperties%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">var </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/ttl-hours.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/ttl-hours.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/ttl-hours.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/ttl-hours.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/ttl-hours.html">ttlHours</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1876677275%2FProperties%2F-251573632" anchor-label="ttlMinutes" id="1876677275%2FProperties%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/ttl-minutes.html"><span>ttl</span><wbr></wbr><span><span>Minutes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1876677275%2FProperties%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">var </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/ttl-minutes.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/ttl-minutes.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/ttl-minutes.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/ttl-minutes.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/ttl-minutes.html">ttlMinutes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1693837563%2FProperties%2F-251573632" anchor-label="ttlSeconds" id="1693837563%2FProperties%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/ttl-seconds.html"><span>ttl</span><wbr></wbr><span><span>Seconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1693837563%2FProperties%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">var </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/ttl-seconds.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/ttl-seconds.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/ttl-seconds.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/ttl-seconds.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/ttl-seconds.html">ttlSeconds</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1547329883%2FFunctions%2F-251573632" anchor-label="allowNullValues" id="-1547329883%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-null-values.html"><span>allow</span><wbr></wbr><span>Null</span><wbr></wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1547329883%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="allow-null-values.html"><span class="token function">allowNullValues</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">allow<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-134500048%2FFunctions%2F-251573632" anchor-label="allowNullValues" id="-134500048%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/allow-null-values.html"><span>allow</span><wbr></wbr><span>Null</span><wbr></wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-134500048%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/allow-null-values.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/allow-null-values.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/allow-null-values.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/allow-null-values.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/allow-null-values.html"><span class="token function">allowNullValues</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/allow-null-values.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/allow-null-values.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-183873436%2FFunctions%2F-251573632" anchor-label="build" id="-183873436%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build.html"><span><span>build</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-183873436%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="build.html"><span class="token function">build</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask/index.html">Cask</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1541850674%2FFunctions%2F-251573632" anchor-label="evictionPolicy" id="1541850674%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="eviction-policy.html"><span>eviction</span><wbr></wbr><span><span>Policy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1541850674%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="eviction-policy.html"><span class="token function">evictionPolicy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">policy<span class="token operator">: </span><a href="../../net.ririfa.cask.util/-eviction-policy/index.html">EvictionPolicy</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1449144582%2FFunctions%2F-251573632" anchor-label="evictionStrategy" id="1449144582%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="eviction-strategy.html"><span>eviction</span><wbr></wbr><span><span>Strategy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1449144582%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="eviction-strategy.html"><span class="token function">evictionStrategy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">strategy<span class="token operator">: </span><a href="../../net.ririfa.cask/-eviction-strategy/index.html">EvictionStrategy</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="727141258%2FFunctions%2F-251573632" anchor-label="loader" id="727141258%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="loader.html"><span><span>loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="727141258%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="loader.html"><span class="token function">loader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loader<span class="token operator">: </span><a href="../../net.ririfa.cask.util/-cask-loader/index.html">CaskLoader</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-906609008%2FFunctions%2F-251573632" anchor-label="loader" id="-906609008%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/loader.html"><span><span>loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-906609008%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/loader.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/loader.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/loader.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/loader.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/loader.html"><span class="token function">loader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><a href="../../net.ririfa.cask.util/-cask-loader/index.html">CaskLoader</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/loader.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/loader.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/loader.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/loader.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1928837963%2FFunctions%2F-251573632" anchor-label="maxSize" id="1928837963%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-size.html"><span>max</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1928837963%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="max-size.html"><span class="token function">maxSize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">size<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1434657931%2FFunctions%2F-251573632" anchor-label="onEvict" id="-1434657931%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-evict.html"><span>on</span><wbr></wbr><span><span>Evict</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1434657931%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-evict.html"><span class="token function">onEvict</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">evictor<span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-bi-consumer/index.html">CaskBiConsumer</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2025366417%2FFunctions%2F-251573632" anchor-label="onEvict" id="2025366417%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/on-evict.html"><span>on</span><wbr></wbr><span><span>Evict</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2025366417%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/on-evict.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/on-evict.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/on-evict.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/on-evict.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/on-evict.html"><span class="token function">onEvict</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../net.ririfa.cask/on-evict.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/on-evict.html">V</a><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/on-evict.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/on-evict.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1669683767%2FFunctions%2F-251573632" anchor-label="shareGcExecutor" id="-1669683767%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="share-gc-executor.html"><span>share</span><wbr></wbr><span>Gc</span><wbr></wbr><span><span>Executor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1669683767%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="share-gc-executor.html"><span class="token function">shareGcExecutor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">shared<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1314953827%2FFunctions%2F-251573632" anchor-label="ttl" id="-1314953827%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ttl.html"><span><span>ttl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1314953827%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="ttl.html"><span class="token function">ttl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ttl<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html">Duration</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="187490974%2FFunctions%2F-251573632" anchor-label="ttl" id="187490974%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../net.ririfa.cask/ttl.html"><span><span>ttl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="187490974%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/ttl.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/ttl.html">V</a><span class="token operator">&gt; </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/ttl.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/ttl.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../net.ririfa.cask/ttl.html"><span class="token function">ttl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">unit<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/TimeUnit.html">TimeUnit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="../../net.ririfa.cask/ttl.html">K</a><span class="token punctuation">, </span><a href="../../net.ririfa.cask/ttl.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1446243316%2FFunctions%2F-251573632" anchor-label="withCustomGcExecutor" id="1446243316%2FFunctions%2F-251573632" data-filterable-set=":/main"></a>
+          <div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-custom-gc-executor.html"><span>with</span><wbr></wbr><span>Custom</span><wbr></wbr><span>Gc</span><wbr></wbr><span><span>Executor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1446243316%2FFunctions%2F-251573632"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="with-custom-gc-executor.html"><span class="token function">withCustomGcExecutor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">executor<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html">ScheduledExecutorService</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../net.ririfa.cask/-cask-builder/index.html">CaskBuilder</a><span class="token operator">&lt;</span><a href="index.html">K</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
