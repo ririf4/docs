@@ -41,6 +41,7 @@ $dokka.location:net.ririfa.langman/LangMan.LogLevel/values/#/PointingToDeclarati
 $dokka.location:net.ririfa.langman/LangMan///PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man/index.html
 $dokka.location:net.ririfa.langman/LangMan/convertToFinalType/#/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man/convert-to-final-type.html
 $dokka.location:net.ririfa.langman/LangMan/expectedMKType/#/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man/expected-m-k-type.html
+$dokka.location:net.ririfa.langman/LangMan/getAllTranslations/#kotlin.String/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man/get-all-translations.html
 $dokka.location:net.ririfa.langman/LangMan/getAvailableLanguages/#/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man/get-available-languages.html
 $dokka.location:net.ririfa.langman/LangMan/getMessage/#net.ririfa.langman.MessageKey[TypeParam(bounds=[net.ririfa.langman.IMessageProvider[TypeParam(bounds=[kotlin.Any])]]),TypeParam(bounds=[kotlin.Any])]#kotlin.String/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man/get-message.html
 $dokka.location:net.ririfa.langman/LangMan/getMessage/#net.ririfa.langman.MessageKey[TypeParam(bounds=[net.ririfa.langman.IMessageProvider[TypeParam(bounds=[kotlin.Any])]]),TypeParam(bounds=[kotlin.Any])]#kotlin.collections.Map[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any?])]#kotlin.String/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man/get-message.html
@@ -59,6 +60,7 @@ $dokka.location:net.ririfa.langman/LangManBuilder///PointingToDeclaration/langm
 $dokka.location:net.ririfa.langman/LangManBuilder/autoUpdateIfNeeded/#kotlin.Boolean/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man-builder/auto-update-if-needed.html
 $dokka.location:net.ririfa.langman/LangManBuilder/build/#/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man-builder/build.html
 $dokka.location:net.ririfa.langman/LangManBuilder/debug/#kotlin.Boolean/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man-builder/debug.html
+$dokka.location:net.ririfa.langman/LangManBuilder/fromClass/#java.lang.Class[*]/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man-builder/from-class.html
 $dokka.location:net.ririfa.langman/LangManBuilder/fromResource/#kotlin.String/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man-builder/from-resource.html
 $dokka.location:net.ririfa.langman/LangManBuilder/registerTextFactory/#net.ririfa.langman.TextFactory[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man-builder/register-text-factory.html
 $dokka.location:net.ririfa.langman/LangManBuilder/toPath/#java.nio.file.Path/PointingToDeclaration/langman-core/net.ririfa.langman/-lang-man-builder/to-path.html
