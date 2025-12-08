@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.2.0        </div>
+0.2.7        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -108,14 +108,44 @@
   <div class="breadcrumbs"><a href="../../../index.html">akkaradb</a><span class="delimiter">/</span><a href="../index.html">dev.swiftstorm.akkaradb.common.binpack</a><span class="delimiter">/</span><span class="current">AdapterSetting</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Adapter</span><wbr></wbr><span><span>Setting</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">AdapterSetting</a></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">AdapterSetting</a></div><p class="paragraph">AdapterSetting</p><p class="paragraph">Global settings for BinPack adapters and performance monitoring. All settings are thread-safe and can be modified at runtime.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="PROPERTY">
         <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-1520628360%2FProperties%2F289714029" anchor-label="maxCollectionSize" id="-1520628360%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+        <div class="table"><a data-name="1321331073%2FProperties%2F289714029" anchor-label="enableDetailedErrors" id="1321331073%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-detailed-errors.html"><span>enable</span><wbr></wbr><span>Detailed</span><wbr></wbr><span><span>Errors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1321331073%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-volatile/index.html"><span class="token annotation builtin">Volatile</span></a></div></div><span class="token keyword">var </span><a href="enable-detailed-errors.html">enableDetailedErrors</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Enable detailed error messages with stack traces. When enabled, errors include more context but may impact performance. Default: true</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="416424217%2FProperties%2F289714029" anchor-label="enableStatistics" id="416424217%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-statistics.html"><span>enable</span><wbr></wbr><span><span>Statistics</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="416424217%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-volatile/index.html"><span class="token annotation builtin">Volatile</span></a></div></div><span class="token keyword">var </span><a href="enable-statistics.html">enableStatistics</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Enable performance statistics collection. When enabled, BinPack will track encode/decode operations. Default: false (disabled for performance)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1520628360%2FProperties%2F289714029" anchor-label="maxCollectionSize" id="-1520628360%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
           <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -125,7 +155,56 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="max-collection-size.html">maxCollectionSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-volatile/index.html"><span class="token annotation builtin">Volatile</span></a></div></div><span class="token keyword">var </span><a href="max-collection-size.html">maxCollectionSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Maximum allowed size for collections (List, Map, etc.). This is a safety limit to prevent memory exhaustion from malformed data. Default: 1,000,000 elements</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1479939168%2FProperties%2F289714029" anchor-label="maxStringLength" id="1479939168%2FProperties%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-string-length.html"><span>max</span><wbr></wbr><span>String</span><wbr></wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1479939168%2FProperties%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-volatile/index.html"><span class="token annotation builtin">Volatile</span></a></div></div><span class="token keyword">var </span><a href="max-string-length.html">maxStringLength</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Maximum allowed string length in bytes. This is a safety limit to prevent memory exhaustion from malformed data. Default: 10 MB</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="977081954%2FFunctions%2F289714029" anchor-label="getStatistics" id="977081954%2FFunctions%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-statistics.html"><span>get</span><wbr></wbr><span><span>Statistics</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="977081954%2FFunctions%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-statistics.html"><span class="token function">getStatistics</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-bin-pack-statistics/index.html">BinPackStatistics</a></div><div class="brief "><p class="paragraph">Get current statistics snapshot.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-454930871%2FFunctions%2F289714029" anchor-label="resetStatistics" id="-454930871%2FFunctions%2F289714029" data-filterable-set=":akkaradb/main"></a>
+          <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset-statistics.html"><span>reset</span><wbr></wbr><span><span>Statistics</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-454930871%2FFunctions%2F289714029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="reset-statistics.html"><span class="token function">resetStatistics</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Reset all statistics counters to zero.</p></div></div></div>
                 </div>
               </div>
             </div>

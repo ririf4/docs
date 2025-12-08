@@ -105,12 +105,31 @@ $dokka.location:dev.swiftstorm.akkaradb.common.binpack.primitive/UUIDAdapter/est
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack.primitive/UUIDAdapter/read/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack.primitive/-u-u-i-d-adapter/read.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack.primitive/UUIDAdapter/write/#java.util.UUID#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack.primitive/-u-u-i-d-adapter/write.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack////PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/index.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/index.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry/clearAll/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/clear-all.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry/getStats/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/get-stats.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry/hasCustomAdapter/#kotlin.reflect.KClass[*]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/has-custom-adapter.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry/hasCustomAdapter/#kotlin.reflect.KType/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/has-custom-adapter.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry/register/#dev.swiftstorm.akkaradb.common.binpack.TypeAdapter[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/register.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry/registerAdapter/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]#dev.swiftstorm.akkaradb.common.binpack.TypeAdapter[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/register-adapter.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry/registerAdapter/#kotlin.reflect.KType#dev.swiftstorm.akkaradb.common.binpack.TypeAdapter[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/register-adapter.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry/unregisterAdapter/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/unregister-adapter.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterRegistry/unregisterAdapter/#kotlin.reflect.KType/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-registry/unregister-adapter.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterResolver///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-resolver/index.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterResolver/generateCompositeAdapter/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-resolver/generate-composite-adapter.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterResolver/getAdapterForClass/#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-resolver/get-adapter-for-class.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterResolver/getAdapterForType/#kotlin.reflect.KType/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-resolver/get-adapter-for-type.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterSetting///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-setting/index.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterSetting/enableDetailedErrors/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-setting/enable-detailed-errors.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterSetting/enableStatistics/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-setting/enable-statistics.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterSetting/getStatistics/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-setting/get-statistics.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterSetting/maxCollectionSize/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-setting/max-collection-size.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterSetting/maxStringLength/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-setting/max-string-length.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterSetting/resetStatistics/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-setting/reset-statistics.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterStats///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-stats/index.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterStats/AdapterStats/#kotlin.Int#kotlin.Int/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-stats/-adapter-stats.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterStats/customAdapterCount/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-stats/custom-adapter-count.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/AdapterStats/customClassAdapterCount/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-adapter-stats/custom-class-adapter-count.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPack///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack/index.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPack/decode/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack/decode.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPack/deepCopy/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack/deep-copy.html
@@ -121,6 +140,17 @@ $dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackBufferPool/get/#ko
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackBufferPool/release/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-buffer-pool/release.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackFormatException///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-format-exception/index.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackFormatException/BinPackFormatException/#kotlin.String#kotlin.Throwable?/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-format-exception/-bin-pack-format-exception.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/index.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/BinPackStatistics/#kotlin.Long#kotlin.Long#kotlin.Long#kotlin.Long#kotlin.Long#kotlin.Int/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/-bin-pack-statistics.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/averageBytesPerDecode/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/average-bytes-per-decode.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/averageBytesPerEncode/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/average-bytes-per-encode.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/customAdapterCount/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/custom-adapter-count.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/decodeCount/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/decode-count.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/deepCopyCount/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/deep-copy-count.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/encodeCount/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/encode-count.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/toString/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/to-string.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/totalBytesDecoded/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/total-bytes-decoded.html
+$dokka.location:dev.swiftstorm.akkaradb.common.binpack/BinPackStatistics/totalBytesEncoded/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-bin-pack-statistics/total-bytes-encoded.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/TypeAdapter.Companion///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-type-adapter/-companion/index.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/TypeAdapter///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-type-adapter/index.html
 $dokka.location:dev.swiftstorm.akkaradb.common.binpack/TypeAdapter/copy/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.binpack/-type-adapter/copy.html
@@ -239,10 +269,12 @@ $dokka.location:dev.swiftstorm.akkaradb.common.vh/LE/readFully/#java.nio.channel
 $dokka.location:dev.swiftstorm.akkaradb.common.vh/LE/writeFully/#java.nio.channels.WritableByteChannel#java.nio.ByteBuffer#kotlin.Int/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common.vh/-l-e/write-fully.html
 $dokka.location:dev.swiftstorm.akkaradb.common////PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/index.html
 $dokka.location:dev.swiftstorm.akkaradb.common//bytesEqual/#dev.swiftstorm.akkaradb.common.ByteBufferL#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/bytes-equal.html
+$dokka.location:dev.swiftstorm.akkaradb.common//copy/dev.swiftstorm.akkaradb.common.ByteBufferL#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/copy.html
 $dokka.location:dev.swiftstorm.akkaradb.common//debugString/dev.swiftstorm.akkaradb.common.ByteBufferL#kotlin.Int/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/debug-string.html
 $dokka.location:dev.swiftstorm.akkaradb.common//estimateMemFootprint/#dev.swiftstorm.akkaradb.common.ByteBufferL#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/estimate-mem-footprint.html
 $dokka.location:dev.swiftstorm.akkaradb.common//fnv1a32/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/fnv1a32.html
 $dokka.location:dev.swiftstorm.akkaradb.common//hasFlag/kotlin.Byte#kotlin.Byte/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/has-flag.html
+$dokka.location:dev.swiftstorm.akkaradb.common//hasRemaining/dev.swiftstorm.akkaradb.common.ByteBufferL#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/has-remaining.html
 $dokka.location:dev.swiftstorm.akkaradb.common//hex/dev.swiftstorm.akkaradb.common.ByteBufferL#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/hex.html
 $dokka.location:dev.swiftstorm.akkaradb.common//lexCompare/#dev.swiftstorm.akkaradb.common.ByteBufferL#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/lex-compare.html
 $dokka.location:dev.swiftstorm.akkaradb.common//memRecordOf/#dev.swiftstorm.akkaradb.common.ByteBufferL#dev.swiftstorm.akkaradb.common.ByteBufferL#kotlin.Long#kotlin.Byte/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.common/mem-record-of.html
@@ -409,6 +441,7 @@ $dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter.Builder/addFp64
 $dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter.Builder/addKey/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/-builder/add-key.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter.Builder/build/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/-builder/build.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter.Companion///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/-companion/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter.Companion/HEADER_SIZE/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/-companion/-h-e-a-d-e-r_-s-i-z-e.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter.Companion/invoke/#kotlin.Long#kotlin.Double#dev.swiftstorm.akkaradb.common.types.U64#kotlin.Boolean/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/-companion/invoke.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter.Companion/readFrom/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/-companion/read-from.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter.Companion/readFrom/#java.nio.channels.ReadableByteChannel#kotlin.Int/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/-companion/read-from.html
@@ -424,6 +457,19 @@ $dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter/writeTo/#dev.sw
 $dokka.location:dev.swiftstorm.akkaradb.engine.bloom/BloomFilter/writeTo/#java.nio.channels.WritableByteChannel/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/write-to.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.bridge////PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bridge/index.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.bridge//tryAppendMem/dev.swiftstorm.akkaradb.format.api.BlockPacker#dev.swiftstorm.akkaradb.common.MemRecord/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.bridge/try-append-mem.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging.impl////PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging.impl/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging.impl/AkkLoggerImpl///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging.impl/-akk-logger-impl/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging.impl/AkkLoggerImpl/AkkLoggerImpl/#kotlin.Function0[kotlin.Boolean]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging.impl/-akk-logger-impl/-akk-logger-impl.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging.impl/AkkLoggerImpl/debug/#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging.impl/-akk-logger-impl/debug.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging.impl/AkkLoggerImpl/error/#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging.impl/-akk-logger-impl/error.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging.impl/AkkLoggerImpl/info/#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging.impl/-akk-logger-impl/info.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging.impl/AkkLoggerImpl/warn/#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging.impl/-akk-logger-impl/warn.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging////PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging/AkkLogger///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging/-akk-logger/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging/AkkLogger/debug/#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging/-akk-logger/debug.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging/AkkLogger/error/#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging/-akk-logger/error.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging/AkkLogger/info/#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging/-akk-logger/info.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.logging/AkkLogger/warn/#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.logging/-akk-logger/warn.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.manifest////PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.manifest/index.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.manifest/AkkManifest.CheckpointEvent///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.manifest/-akk-manifest/-checkpoint-event/index.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.manifest/AkkManifest.CheckpointEvent/CheckpointEvent/#kotlin.String?#kotlin.Long?#kotlin.Long?#kotlin.Long/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.manifest/-akk-manifest/-checkpoint-event/-checkpoint-event.html
@@ -493,6 +539,9 @@ $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkBin/AkkBin/#dev.swiftsto
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkBin/lhs/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-bin/lhs.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkBin/op/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-bin/op.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkBin/rhs/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-bin/rhs.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkCapture///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-capture/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkCapture/AkkCapture/#kotlin.Int/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-capture/-akk-capture.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkCapture/index/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-capture/--index--.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkCol///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-col/index.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkCol/AkkCol/#kotlin.String?#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-col/-akk-col.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkCol/name/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-col/name.html
@@ -519,7 +568,8 @@ $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkOp/entries/#/PointingToD
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkOp/valueOf/#kotlin.String/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-op/value-of.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkOp/values/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-op/values.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkQuery///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-query/index.html
-$dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkQuery/AkkQuery/#dev.swiftstorm.akkaradb.engine.query.AkkExpr[kotlin.Boolean]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-query/-akk-query.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkQuery/AkkQuery/#dev.swiftstorm.akkaradb.engine.query.AkkExpr[kotlin.Boolean]#kotlin.Array[kotlin.Any?]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-query/-akk-query.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkQuery/captures/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-query/captures.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkQuery/toString/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-query/to-string.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkQuery/where/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-query/where.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.query/AkkQueryDsl///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.query/-akk-query-dsl/index.html
@@ -576,6 +626,7 @@ $dokka.location:dev.swiftstorm.akkaradb.engine.sstable/SSTableWriter/close/#/Poi
 $dokka.location:dev.swiftstorm.akkaradb.engine.sstable/SSTableWriter/seal/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.sstable/-s-s-table-writer/seal.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.sstable/SSTableWriter/writeAll/#kotlin.sequences.Sequence[dev.swiftstorm.akkaradb.common.MemRecord]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.sstable/-s-s-table-writer/write-all.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.util////PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.util/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.util//murmur3_128/#dev.swiftstorm.akkaradb.common.ByteBufferL#kotlin.Long/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.util/murmur3_128.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.util/IndexBlock.Builder///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.util/-index-block/-builder/index.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.util/IndexBlock.Builder/Builder/#kotlin.Int/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.util/-index-block/-builder/-builder.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.util/IndexBlock.Builder/add/#dev.swiftstorm.akkaradb.common.ByteBufferL#kotlin.Long/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.util/-index-block/-builder/add.html
@@ -598,6 +649,9 @@ $dokka.location:dev.swiftstorm.akkaradb.engine.util/PeekingIterator/hasNext/#/Po
 $dokka.location:dev.swiftstorm.akkaradb.engine.util/PeekingIterator/next/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.util/-peeking-iterator/next.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.util/PeekingIterator/peek/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.util/-peeking-iterator/peek.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.wal////PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.wal/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.wal/WalFraming///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.wal/-wal-framing/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.wal/WalFraming/frame/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.wal/-wal-framing/frame.html
+$dokka.location:dev.swiftstorm.akkaradb.engine.wal/WalFraming/readOne/#java.nio.ByteBuffer/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.wal/-wal-framing/read-one.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.wal/WalOp.Add///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.wal/-wal-op/-add/index.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.wal/WalOp.Add/Add/#kotlin.ByteArray#kotlin.ByteArray#dev.swiftstorm.akkaradb.common.types.U64#kotlin.Int#dev.swiftstorm.akkaradb.common.types.U64#dev.swiftstorm.akkaradb.common.types.U64/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.wal/-wal-op/-add/-add.html
 $dokka.location:dev.swiftstorm.akkaradb.engine.wal/WalOp.Add/encodeInto/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine.wal/-wal-op/-add/encode-into.html
@@ -635,8 +689,10 @@ $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSL/open/#java.nio.file.Path#d
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSL/open/#java.nio.file.Path#kotlin.Function1[dev.swiftstorm.akkaradb.engine.AkkDSLCfgBuilder,kotlin.Unit]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l/open.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSL/open/dev.swiftstorm.akkaradb.engine.AkkaraDB#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l/open.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/index.html
-$dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/AkkDSLCfg/#java.nio.file.Path#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Long#kotlin.Boolean#kotlin.Int#kotlin.Long#dev.swiftstorm.akkaradb.format.api.ParityCoder?#kotlin.Boolean/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/-akk-d-s-l-cfg.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/AkkDSLCfg/#java.nio.file.Path#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Long#kotlin.Boolean#kotlin.Int#kotlin.Long#dev.swiftstorm.akkaradb.format.api.ParityCoder?#kotlin.Boolean#kotlin.Boolean#kotlin.Double#kotlin.Boolean/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/-akk-d-s-l-cfg.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/baseDir/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/base-dir.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/bloomFPRate/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/bloom-f-p-rate.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/debug/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/debug.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/durableCas/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/durable-cas.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/fastMode/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/fast-mode.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/flushMaxBlocks/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/flush-max-blocks.html
@@ -644,11 +700,14 @@ $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/flushMaxMicros/#/Pointi
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/k/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/k.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/m/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/m.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/parityCoder/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/parity-coder.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/useStripeForRead/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/use-stripe-for-read.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/walGroupMicros/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/wal-group-micros.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfg/walGroupN/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg/wal-group-n.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/index.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/AkkDSLCfgBuilder/#java.nio.file.Path/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/-akk-d-s-l-cfg-builder.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/bloomFPRate/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/bloom-f-p-rate.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/build/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/build.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/debug/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/debug.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/durableCas/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/durable-cas.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/fastMode/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/fast-mode.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/flushMaxBlocks/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/flush-max-blocks.html
@@ -656,14 +715,17 @@ $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/flushMaxMicros/#
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/k/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/k.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/m/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/m.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/parityCoder/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/parity-coder.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/useStripeForRead/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/use-stripe-for-read.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/walGroupMicros/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/wal-group-micros.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkDSLCfgBuilder/walGroupN/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akk-d-s-l-cfg-builder/wal-group-n.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Companion///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-companion/index.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Companion/logger/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-companion/logger.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Companion/open/#dev.swiftstorm.akkaradb.engine.AkkaraDB.Options/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-companion/open.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Options///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-options/index.html
-$dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Options/Options/#java.nio.file.Path#kotlin.Int#kotlin.Int#dev.swiftstorm.akkaradb.format.api.FlushPolicy#kotlin.Boolean#kotlin.Int#kotlin.Long#dev.swiftstorm.akkaradb.format.api.ParityCoder?#kotlin.Boolean#kotlin.Boolean#kotlin.Double/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-options/-options.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Options/Options/#java.nio.file.Path#kotlin.Int#kotlin.Int#dev.swiftstorm.akkaradb.format.api.FlushPolicy#kotlin.Boolean#kotlin.Int#kotlin.Long#dev.swiftstorm.akkaradb.format.api.ParityCoder?#kotlin.Boolean#kotlin.Boolean#kotlin.Double#kotlin.Boolean/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-options/-options.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Options/baseDir/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-options/base-dir.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Options/bloomFPRate/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-options/bloom-f-p-rate.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Options/debug/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-options/debug.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Options/durableCas/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-options/durable-cas.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Options/fastMode/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-options/fast-mode.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB.Options/flushPolicy/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/-options/flush-policy.html
@@ -679,7 +741,6 @@ $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB/compareAndSwap/#dev.swif
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB/delete/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/delete.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB/flush/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/flush.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB/get/#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/get.html
-$dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB/iterator/#dev.swiftstorm.akkaradb.engine.memtable.MemTable.KeyRange/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/iterator.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB/lastSeq/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/last-seq.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB/put/#dev.swiftstorm.akkaradb.common.ByteBufferL#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/put.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/AkkaraDB/range/#dev.swiftstorm.akkaradb.common.ByteBufferL#dev.swiftstorm.akkaradb.common.ByteBufferL/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-akkara-d-b/range.html
@@ -940,6 +1001,8 @@ dev.swiftstorm.akkaradb.common.vh
 dev.swiftstorm.akkaradb.engine
 dev.swiftstorm.akkaradb.engine.bloom
 dev.swiftstorm.akkaradb.engine.bridge
+dev.swiftstorm.akkaradb.engine.logging
+dev.swiftstorm.akkaradb.engine.logging.impl
 dev.swiftstorm.akkaradb.engine.manifest
 dev.swiftstorm.akkaradb.engine.memtable
 dev.swiftstorm.akkaradb.engine.query

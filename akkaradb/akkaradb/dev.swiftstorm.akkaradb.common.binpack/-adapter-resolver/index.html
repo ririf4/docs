@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.2.0        </div>
+0.2.7        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -108,7 +108,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">akkaradb</a><span class="delimiter">/</span><a href="../index.html">dev.swiftstorm.akkaradb.common.binpack</a><span class="delimiter">/</span><span class="current">AdapterResolver</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Adapter</span><wbr></wbr><span><span>Resolver</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">AdapterResolver</a></div><p class="paragraph">AdapterResolver (ByteBufferL-only)</p><p class="paragraph">Resolves a TypeAdapter for a given KType. Public interface remains unchanged but all adapters are expected to operate on ByteBufferL.</p><p class="paragraph">NOTE:</p><ul><li><p class="paragraph">Primitive and additional adapters must be ByteBufferL-based implementations.</p></li><li><p class="paragraph">ByteBuffer-based adapters are not supported anymore.</p></li></ul></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">AdapterResolver</a></div><p class="paragraph">AdapterResolver (ByteBufferL-only, v1.0.0)</p><p class="paragraph">Resolves a TypeAdapter for a given KType with support for custom adapters. Custom adapters registered via AdapterRegistry take priority over built-in adapters.</p><p class="paragraph">Performance optimizations:</p><ul><li><p class="paragraph">Fast path for primitive types</p></li><li><p class="paragraph">Efficient caching with computeIfAbsent</p></li><li><p class="paragraph">Custom adapter priority system</p></li><li><p class="paragraph">Minimized reflection overhead</p></li></ul><p class="paragraph">NOTE:</p><ul><li><p class="paragraph">All adapters must be ByteBufferL-based implementations.</p></li><li><p class="paragraph">ByteBuffer-based adapters are not supported.</p></li></ul></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -155,7 +155,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-adapter-for-type.html"><span class="token function">getAdapterForType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-type/index.html">KType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-type-adapter/index.html">TypeAdapter</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-adapter-for-type.html"><span class="token function">getAdapterForType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-type/index.html">KType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-type-adapter/index.html">TypeAdapter</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get an adapter for the given type. Checks custom adapters first, then falls back to built-in adapters.</p></div></div></div>
                 </div>
               </div>
             </div>
