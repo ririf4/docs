@@ -753,9 +753,9 @@ $dokka.location:dev.swiftstorm.akkaradb.engine/Id///PointingToDeclaration/akkar
 $dokka.location:dev.swiftstorm.akkaradb.engine/NonEmpty///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-non-empty/index.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/PackedTable///PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-packed-table/index.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/PackedTable/PackedTable/#dev.swiftstorm.akkaradb.engine.AkkaraDB#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-packed-table/-packed-table.html
+$dokka.location:dev.swiftstorm.akkaradb.engine/PackedTable/akkdb/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-packed-table/akkdb.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/PackedTable/close/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-packed-table/close.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/PackedTable/count/#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),kotlin.Boolean]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-packed-table/count.html
-$dokka.location:dev.swiftstorm.akkaradb.engine/PackedTable/db/#/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-packed-table/db.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/PackedTable/delete/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-packed-table/delete.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/PackedTable/exists/#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),kotlin.Boolean]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-packed-table/exists.html
 $dokka.location:dev.swiftstorm.akkaradb.engine/PackedTable/firstOrNull/#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),kotlin.Boolean]/PointingToDeclaration/akkaradb/dev.swiftstorm.akkaradb.engine/-packed-table/first-or-null.html
