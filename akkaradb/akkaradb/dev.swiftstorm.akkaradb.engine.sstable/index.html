@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.2.10        </div>
+0.4.0        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -144,17 +144,17 @@
               </div>
             </div>
           </div>
-<a data-name="1162960858%2FClasslikes%2F289714029" anchor-label="BlockSearcher" id="1162960858%2FClasslikes%2F289714029" data-filterable-set=":akkaradb/main"></a>
+<a data-name="853797606%2FClasslikes%2F289714029" anchor-label="RefCountedSSTableReader" id="853797606%2FClasslikes%2F289714029" data-filterable-set=":akkaradb/main"></a>
           <div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="-block-searcher/index.html"><span>Block</span><wbr></wbr><span><span>Searcher</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1162960858%2FClasslikes%2F289714029"></span>
+                  <div><a href="-ref-counted-s-s-table-reader/index.html"><span>Ref</span><wbr></wbr><span>Counted</span><wbr></wbr><span>SSTable</span><wbr></wbr><span><span>Reader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="853797606%2FClasslikes%2F289714029"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-block-searcher/index.html">BlockSearcher</a></div><div class="brief "><p class="paragraph">BlockSearcher</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-ref-counted-s-s-table-reader/index.html">RefCountedSSTableReader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inner<span class="token operator">: </span><a href="-s-s-table-reader/index.html">SSTableReader</a></span></span><span class="token punctuation">)</span> : <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">Reference-counted SSTableReader wrapper.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-s-s-table-reader/index.html">SSTableReader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ch<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/channels/SeekableByteChannel.html">SeekableByteChannel</a><span class="token punctuation">, </span></span><span class="parameter ">footer<span class="token operator">: </span><a href="-a-k-s-s-footer/-footer/index.html">AKSSFooter.Footer</a><span class="token punctuation">, </span></span><span class="parameter ">index<span class="token operator">: </span><a href="../dev.swiftstorm.akkaradb.engine.util/-index-block/index.html">IndexBlock</a><span class="token punctuation">, </span></span><span class="parameter ">bloom<span class="token operator">: </span><a href="../dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/index.html">BloomFilter</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">cache<span class="token operator">: </span><a href="-block-cache/index.html">BlockCache</a><span class="token operator"> = </span>BlockCache(512)<span class="token punctuation">, </span></span><span class="parameter ">searcher<span class="token operator">: </span><a href="-block-searcher/index.html">BlockSearcher</a><span class="token operator"> = </span>StandardBlockSearcher</span></span><span class="token punctuation">)</span> : <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">SSTableReader (v3)</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-s-s-table-reader/index.html">SSTableReader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ch<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/channels/SeekableByteChannel.html">SeekableByteChannel</a><span class="token punctuation">, </span></span><span class="parameter ">footer<span class="token operator">: </span><a href="-a-k-s-s-footer/-footer/index.html">AKSSFooter.Footer</a><span class="token punctuation">, </span></span><span class="parameter ">index<span class="token operator">: </span><a href="../dev.swiftstorm.akkaradb.engine.util/-index-block/index.html">IndexBlock</a><span class="token punctuation">, </span></span><span class="parameter ">bloom<span class="token operator">: </span><a href="../dev.swiftstorm.akkaradb.engine.bloom/-bloom-filter/index.html">BloomFilter</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">cache<span class="token operator">: </span><a href="-block-cache/index.html">BlockCache</a><span class="token operator"> = </span>BlockCache(512)<span class="token punctuation">, </span></span><span class="parameter ">searcher<span class="token operator">: </span><a href="../dev.swiftstorm.akkaradb.engine.sstable.bs/-block-searcher/index.html">BlockSearcher</a><span class="token operator"> = </span>StandardBlockSearcher</span></span><span class="token punctuation">)</span> : <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html">Closeable</a></div><div class="brief "><p class="paragraph">SSTableReader (v3)</p></div></div></div>
                 </div>
               </div>
             </div>

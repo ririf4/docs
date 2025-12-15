@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.2.10        </div>
+0.4.0        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -109,7 +109,7 @@
   <div class="cover ">
     <h1 class="cover"><span>force</span><wbr></wbr><span><span>Sync</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="force-sync.html"><span class="token function">forceSync</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="force-sync.html"><span class="token function">forceSync</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">Forces all pending writes to durable storage.</p><p class="paragraph">This method blocks until:</p><ol><li><p class="paragraph">All previously submitted Write commands are written to the file</p></li><li><p class="paragraph">FileChannel.force(false) completes (fdatasync on Linux)</p></li></ol><h2 class="">Use Cases</h2><ul><li><p class="paragraph"><strong>Checkpointing</strong>: ensure WAL is durable before writing checkpoint</p></li><li><p class="paragraph"><strong>Graceful shutdown</strong>: flush pending writes before close()</p></li><li><p class="paragraph"><strong>Testing</strong>: verify durability guarantees</p></li></ul><h2 class="">Performance</h2><ul><li><p class="paragraph">Typical latency: ~50-500 µs (NVMe) or 1-10 ms (SATA SSD)</p></li><li><p class="paragraph">Amortized cost: minimal if called infrequently (e.g., every 1000 ops)</p></li></ul><h2 class="">Error Handling</h2><ul><li><p class="paragraph">Returns immediately if WAL is closed (safe no-op)</p></li><li><p class="paragraph">Throws <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html">IOException</a> if fsync times out after 5 seconds</p></li></ul><h4 class="">Throws</h4><div class="table"><div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html"><span><span>IOException</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if fsync operation times out</p></div></div></div></div></div></div></div>
 </div>
     <div class="footer">
         <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>

@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.2.10        </div>
+0.4.0        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -109,7 +109,7 @@
   <div class="cover ">
     <h1 class="cover"><span><span>truncate</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="truncate.html"><span class="token function">truncate</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">Truncate WAL file to zero length. Intended to be called after a durable checkpoint.</p></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="truncate.html"><span class="token function">truncate</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">Truncates the WAL file to zero length.</p><p class="paragraph">This operation is intended to be called after a durable checkpoint, when the WAL entries are no longer needed for recovery.</p><h2 class="">Operation Flow</h2><ol><li><p class="paragraph">Submit Truncate command to flusher queue</p></li><li><p class="paragraph">Flusher calls ch.truncate(0) and ch.force(true)</p></li><li><p class="paragraph">Caller blocks until truncation completes</p></li></ol><h2 class="">Safety Guarantees</h2><ul><li><p class="paragraph">All pending writes are flushed before truncation (implicit ordering)</p></li><li><p class="paragraph">FileChannel.force(true) ensures metadata is synced (file size update)</p></li><li><p class="paragraph">Single-writer semantics prevent race conditions</p></li></ul><h2 class="">Performance</h2><ul><li><p class="paragraph">Typical latency: ~100 µs - 10 ms (depends on filesystem)</p></li><li><p class="paragraph">Safe to call frequently (e.g., after every checkpoint)</p></li></ul><h4 class="">Throws</h4><div class="table"><div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html"><span><span>IOException</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if truncation times out after 5 seconds</p></div></div></div></div></div></div></div>
 </div>
     <div class="footer">
         <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
