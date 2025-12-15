@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.2.10        </div>
+0.4.0        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -109,7 +109,7 @@
   <div class="cover ">
     <h1 class="cover"><span><span>close</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><p class="paragraph">Closes the WAL writer and releases resources.</p><h2 class="">Shutdown Sequence</h2><ol><li><p class="paragraph">Set running flag to false (prevents new append() calls)</p></li><li><p class="paragraph">Submit Shutdown command to flusher queue</p></li><li><p class="paragraph">Wait up to 2 seconds for flusher thread to terminate</p></li><li><p class="paragraph">Perform final fsync (best-effort)</p></li><li><p class="paragraph">Close FileChannel</p></li></ol><h2 class="">Idempotency</h2><p class="paragraph">Safe to call multiple times; subsequent calls are no-ops.</p><h2 class="">Durability Guarantee</h2><p class="paragraph">All entries submitted before close() are guaranteed to be durable, either via:</p><ul><li><p class="paragraph">Group commit in flusher thread (if still running)</p></li><li><p class="paragraph">Final fsync in close() (if flusher already terminated)</p></li></ul><h2 class="">Resource Cleanup</h2><ul><li><p class="paragraph">Flusher thread: joined and terminated</p></li><li><p class="paragraph">FileChannel: force() + close()</p></li><li><p class="paragraph">Buffers: released back to pool (no leaks)</p></li></ul><h4 class="">Throws</h4><div class="table"><div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-nothing/index.html"><span><span>Nothing</span></span></a></div></span></div><div><div class="title"><p class="paragraph">(all exceptions are suppressed for clean shutdown)</p></div></div></div></div></div></div></div>
 </div>
     <div class="footer">
         <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>

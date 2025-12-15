@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-0.2.10        </div>
+0.4.0        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -109,7 +109,7 @@
   <div class="cover ">
     <h1 class="cover"><span><span>release</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="release.html"><span class="token function">release</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buf<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common/-byte-buffer-l/index.html">ByteBufferL</a></span></span><span class="token punctuation">)</span></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":akkaradb/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="release.html"><span class="token function">release</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buf<span class="token operator">: </span><a href="../../dev.swiftstorm.akkaradb.common/-byte-buffer-l/index.html">ByteBufferL</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Returns a buffer to the pool for reuse.</p><p class="paragraph">The buffer will be retained in the pool if under <span data-unresolved-link="dev.swiftstorm.akkaradb.common.pool/FixedBufferPool/capacity/#/PointingToDeclaration/">capacity</span>, otherwise dropped. In strict mode, throws if the buffer wasn't leased from this pool.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>buf</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The buffer to release (must have been obtained via <a href="get.html">get</a>)</p></div></div></div></div></div><h4 class="">Throws</h4><div class="table"><div class="table-row" data-filterable-current=":akkaradb/main" data-filterable-set=":akkaradb/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html"><span>Illegal</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">in strict mode if buffer wasn't leased or is read-only</p></div></div></div></div></div></div></div>
 </div>
     <div class="footer">
         <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
