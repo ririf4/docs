@@ -4,8 +4,14 @@ $dokka.location:net.ririfa.yacla.annotation////PointingToDeclaration/yacla-core
 $dokka.location:net.ririfa.yacla.annotation/BlankToNull///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-blank-to-null/index.html
 $dokka.location:net.ririfa.yacla.annotation/EnumList///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-enum-list/index.html
 $dokka.location:net.ririfa.yacla.annotation/EnumSet///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-enum-set/index.html
+$dokka.location:net.ririfa.yacla.annotation/Key///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-key/index.html
+$dokka.location:net.ririfa.yacla.annotation/Key/value/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-key/value.html
 $dokka.location:net.ririfa.yacla.annotation/Loader///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-loader/index.html
 $dokka.location:net.ririfa.yacla.annotation/Loader/value/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-loader/value.html
+$dokka.location:net.ririfa.yacla.annotation/NotBlank///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-not-blank/index.html
+$dokka.location:net.ririfa.yacla.annotation/Range///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-range/index.html
+$dokka.location:net.ririfa.yacla.annotation/Range/max/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-range/max.html
+$dokka.location:net.ririfa.yacla.annotation/Range/min/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-range/min.html
 $dokka.location:net.ririfa.yacla.annotation/SetOf///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-set-of/index.html
 $dokka.location:net.ririfa.yacla.annotation/Warn///PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-warn/index.html
 $dokka.location:net.ririfa.yacla.annotation/Warn/message/#/PointingToDeclaration/yacla-core/net.ririfa.yacla.annotation/-warn/message.html
@@ -87,6 +93,7 @@ $dokka.location:net.ririfa.yacla/Yacla/fillByDefault/#java.lang.Class[TypeParam(
 $dokka.location:net.ririfa.yacla/Yacla/loader/#/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
 $dokka.location:net.ririfa.yacla/Yacla/loader/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.Function1[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
 $dokka.location:net.ririfa.yacla/Yacla/loader/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
+$dokka.location:net.ririfa.yacla/Yacla/loader/#kotlin.Function1[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
 $dokka.location:net.ririfa.yacla/Yacla/loader/net.ririfa.yacla.LoaderScope#kotlin.Function1[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/loader.html
 $dokka.location:net.ririfa.yacla/Yacla/withDefaults/#net.ririfa.yacla.LoaderSettings#java.util.function.Function[net.ririfa.yacla.loader.JLoaderScope,TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/with-defaults.html
 $dokka.location:net.ririfa.yacla/Yacla/withDefaults/#net.ririfa.yacla.LoaderSettings#kotlin.Function1[net.ririfa.yacla.LoaderScope,TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/yacla-core/net.ririfa.yacla/-yacla/with-defaults.html
