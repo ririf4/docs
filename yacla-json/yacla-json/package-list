@@ -1,6 +1,10 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:net.ririfa.yacla.json////PointingToDeclaration/yacla-json/net.ririfa.yacla.json/index.html
+$dokka.location:net.ririfa.yacla.json//json/net.ririfa.yacla.Yacla#kotlin.Function1[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/json.html
+$dokka.location:net.ririfa.yacla.json//json/net.ririfa.yacla.Yacla#kotlin.String#java.nio.file.Path#kotlin.Boolean#net.ririfa.yacla.logger.YaclaLogger?/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/json.html
+$dokka.location:net.ririfa.yacla.json//jsonLoader/net.ririfa.yacla.Yacla#kotlin.Function1[net.ririfa.yacla.loader.ConfigLoaderBuilder[TypeParam(bounds=[kotlin.Any])],kotlin.Unit]/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/json-loader.html
+$dokka.location:net.ririfa.yacla.json//jsonLoader/net.ririfa.yacla.Yacla#kotlin.String#java.nio.file.Path#kotlin.Boolean#net.ririfa.yacla.logger.YaclaLogger?/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/json-loader.html
 $dokka.location:net.ririfa.yacla.json/JsonParser///PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-parser/index.html
 $dokka.location:net.ririfa.yacla.json/JsonParser/JsonParser/#/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-parser/-json-parser.html
 $dokka.location:net.ririfa.yacla.json/JsonParser/mapper/#/PointingToDeclaration/yacla-json/net.ririfa.yacla.json/-json-parser/mapper.html
