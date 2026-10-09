@@ -44,7 +44,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-4.1.1        </div>
+4.2.0        </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
                 <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
@@ -133,7 +133,22 @@
       </div>
       <div data-togglable="FUNCTION">
         <h2 class="tableheader">Functions</h2>
-        <div class="table"><a data-name="1502955365%2FFunctions%2F1776522620" anchor-label="isOlderVersion" id="1502955365%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+        <div class="table"><a data-name="835304602%2FFunctions%2F1776522620" anchor-label="copyConfigIfMissing" id="835304602%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="copy-config-if-missing.html"><span>copy</span><wbr></wbr><span>Config</span><wbr></wbr><span>If</span><wbr></wbr><span><span>Missing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="835304602%2FFunctions%2F1776522620"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="copy-config-if-missing.html"><span class="token function">copyConfigIfMissing</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html">Path</a><span class="token punctuation">, </span></span><span class="parameter ">input<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html">InputStream</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Stages the initial copy and never replaces an existing destination. The caller owns the stream.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1502955365%2FFunctions%2F1776522620" anchor-label="isOlderVersion" id="1502955365%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
           <div class="table-row table-row_content" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -144,6 +159,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-older-version.html"><span class="token function">isOlderVersion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">current<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">latest<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Compares two semantic version strings and determines if the current version is older than the latest version.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1685217896%2FFunctions%2F1776522620" anchor-label="writeConfigAtomically" id="-1685217896%2FFunctions%2F1776522620" data-filterable-set=":yacla-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":yacla-core/main" data-filterable-set=":yacla-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-config-atomically.html"><span>write</span><wbr></wbr><span>Config</span><wbr></wbr><span><span>Atomically</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1685217896%2FFunctions%2F1776522620"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":yacla-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="write-config-atomically.html"><span class="token function">writeConfigAtomically</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html">Path</a><span class="token punctuation">, </span></span><span class="parameter ">content<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Writes beside the destination before replacing it, so serialization failures leave it intact.</p></div></div></div>
                 </div>
               </div>
             </div>
